@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body  class="body">
+<body class="body">
 
 
   <header class="header-page">
@@ -16,23 +16,23 @@
       <div class="header-page__logo">
         <a href="#" class="header-page__logo-link">
           <picture>
-            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-            <img class="header-page__img" src="img/logo-mobile.svg" style="width: 100px; height: 100px;">
+            <source srcset="img/logo-tablet.svg" alt="cat-logo" media="(min-width: 768px)">
+            <img alt="cat-logo" class="header-page__img" src="img/logo-mobile.svg" style="width: 100px; height: 100px;">
           </picture>
         </a>
       </div>
 
-      <nav class="header-page__nav-wrap">
-        <ul class="header-page__nav">
-          <li class="header-page__list header-page__list--activ">
+      <nav class="header-page__nav">
+        <ul class="header-page__list">
+          <li class="header-page__item header-page__item--activ">
             <a href="#" class="header-page__link header-page__link--activ">Главная</a>
           </li>
 
-          <li class="header-page__list">
+          <li class="header-page__item">
             <a href="#" class="header-page__link">Каталог продукции</a>
           </li>
 
-          <li class="header-page__list">
+          <li class="header-page__item">
             <a href="#" class="header-page__link">Подбор программы</a>
           </li>
         </ul>
@@ -54,22 +54,22 @@
     </div>
 
     <fieldset class="page-form__program-wrap">
-      <ul class="page-form__nav-program">
-        <li class="page-form__program-list">
+      <ul class="page-form__list-program">
+        <li class="page-form__program-item">
           <label class="form">
             ИМЯ:*
             <input type="text" class="form__input" placeholder="барсик">
           </label>
         </li>
 
-        <li class="page-form__program-list">
+        <li class="page-form__program-item">
           <label class="form">
             Вес (кг):*
             <input type="text" class="form__input" placeholder="7">
           </label>
         </li>
 
-        <li class="page-form__program-list">
+        <li class="page-form__program-item">
           <label class="form">
             Возраст (лет):
             <input type="text" class="form__input" placeholder="7">
@@ -79,8 +79,8 @@
     </fieldset>
 
     <fieldset class="page-form__program-wrap">
-      <ul class="page-form__nav-choice">
-        <li class="page-form__list-choice">
+      <ul class="page-form__list-choice">
+        <li class="page-form__item-choice">
           <label class="radio-form">
             <input class="radio-form__input" type="radio">
             <span class="radio-form__style"></span>
@@ -88,7 +88,7 @@
           </label>
         </li>
 
-        <li class="page-form__list-choice">
+        <li class="page-form__item-choice">
           <label class="radio-form">
             <input class="radio-form__input" type="radio">
             <span class="radio-form__style"></span>
@@ -96,7 +96,7 @@
           </label>
         </li>
 
-        <li class="page-form__list-choice">
+        <li class="page-form__item-choice">
           <label class="radio-form">
             <input class="radio-form__input" type="radio">
             <span class="radio-form__style"></span>
@@ -111,8 +111,8 @@
         Контактные данные (владельца кота)
       </legend>
 
-      <nav class="page-form__nav-wrap">
-        <ul class="page-form__nav-contacts">
+      <nav class="page-form__nav">
+        <ul class="page-form__list-contacts">
           <li class="page-form__contacts-list">
             <label class="form">
               E-mail:*
@@ -121,7 +121,7 @@
             </label>
           </li>
 
-          <li class="page-form__contacts-list">
+          <li class="page-form__item-contacts">
             <label class="form">
               Телефон:*
               <input type="text" class="form__input" placeholder="8 (960) 900-60-90">
@@ -146,9 +146,9 @@
         Дополнительно
       </legend>
 
-      <nav class="page-form__nav-wrap">
-        <ul class="page-form__nav-additionally">
-          <li class="page-form__list-check">
+      <nav class="page-form__nav">
+        <ul class="page-form__list-additionally">
+          <li class="page-form__item-check">
             <label class="checkbox">
               <span class="checkbox-style"></span>
               <input class="checkbox__input" type="checkbox">
@@ -156,7 +156,7 @@
             </label>
           </li>
 
-          <li class="page-form__list-check">
+          <li class="page-form__item-check">
             <label class="checkbox">
               <span class="checkbox-style"></span>
               <input class="checkbox__input" type="checkbox">
@@ -164,7 +164,7 @@
             </label>
           </li>
 
-          <li class="page-form__list-check">
+          <li class="page-form__item-check">
             <label class="checkbox">
               <span class="checkbox-style"></span>
               <input class="checkbox__input" type="checkbox">
@@ -172,7 +172,7 @@
             </label>
           </li>
 
-          <li class="page-form__list-check">
+          <li class="page-form__item-check">
             <label class="checkbox">
               <span class="checkbox-style"></span>
               <input class="checkbox__input" type="checkbox">
@@ -210,9 +210,9 @@
           </p>
         </div>
       </div>
-
+      
       <div class="map__wrap-img">
-        <img src="https://via.placeholder.com/150x150">
+        <img src="img/map.png" style="width: 100px; height: 100px;" alt="map">
       </div>
     </div>
   </section>
