@@ -5,32 +5,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
 
   <header class="header-page">
     <div class="header-page__wrap">
       <div class="header-page__logo">
         <a href="#" class="header-page__logo-link">
           <picture>
-            <source srcset="https://via.placeholder.com/150x150" media="(min-width: 768px)">
-            <img class="header-page__img" src="https://via.placeholder.com/150x150">
+            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <img class="header-page__img" src="img/logo-mobile.svg" style="width: 100px; height: 100px;">
           </picture>
         </a>
       </div>
 
-      <nav class="header-page__nav-wrap">
-        <ul class="header-page__nav">
-          <li class="header-page__list header-page__list--activ">
+      <nav class="header-page__nav">
+        <ul class="header-page__list">
+          <li class="header-page__item header-page__item--activ">
             <a href="#" class="header-page__link header-page__link--activ">Главная</a>
           </li>
 
-          <li class="header-page__list">
+          <li class="header-page__item">
             <a href="#" class="header-page__link">Каталог продукции</a>
           </li>
 
-          <li class="header-page__list">
+          <li class="header-page__item">
             <a href="#" class="header-page__link">Подбор программы</a>
           </li>
         </ul>
@@ -46,18 +47,18 @@
         </h1>
       </div>
 
-      <ul class="catalog__navigation">
-        <li class="catalog__list catalog__list--directory">
+      <ul class="catalog__list">
+        <li class="catalog__item catalog__item--directory">
           <div class="directory">
             <div class="directory__wrap">
               <div class="directory__img-wrap">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="img/chicken500.png" style="width: 100px; height: 100px;" alt="500chicken">
               </div>
 
               <div class="directory__info-wrap">
-                <strong class="directory__heading">
+                <h3 class="directory__heading">
                   Cat Energy PRO 500 г
-                </strong>
+                </h3>
               </div>
 
               <dl class="directory__nav">
@@ -84,17 +85,17 @@
           </div>
         </li>
 
-        <li class="catalog__list catalog__list--directory">
+        <li class="catalog__item catalog__item--directory">
           <div class="directory">
             <div class="directory__wrap">
               <div class="directory__img-wrap">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="img/chicken1000.png" style="width: 100px; height: 100px;" alt="1000chicken">
               </div>
 
               <div class="directory__info-wrap">
-                <strong class="directory__heading">
+                <h3 class="directory__heading">
                   Cat Energy PRO 1000 г
-                </strong>
+                </h3>
               </div>
 
               <dl class="directory__nav">
@@ -121,17 +122,17 @@
           </div>
         </li>
 
-        <li class="catalog__list catalog__list--directory">
+        <li class="catalog__item catalog__item--directory">
           <div class="directory">
             <div class="directory__wrap">
               <div class="directory__img-wrap">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="img/fish500.png" style="width: 100px; height: 100px;" alt="500fish">
               </div>
 
               <div class="directory__info-wrap">
-                <strong class="directory__heading">
+                <h3 class="directory__heading">
                   Cat Energy PRO 500 г
-                </strong>
+                </h3>
               </div>
 
               <dl class="directory__nav">
@@ -158,17 +159,17 @@
           </div>
         </li>
 
-        <li class="catalog__list catalog__list--directory">
+        <li class="catalog__item catalog__item--directory">
           <div class="directory">
             <div class="directory__wrap">
               <div class="directory__img-wrap">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="img/fish1000.png" style="width: 100px; height: 100px;" alt="1000fish">
               </div>
 
               <div class="directory__info-wrap">
-                <strong class="directory__heading">
+                <h3 class="directory__heading">
                   Cat Energy PRO 1000 г
-                </strong>
+                </h3>
               </div>
 
               <dl class="directory__nav">
@@ -195,54 +196,18 @@
           </div>
         </li>
 
-        <li class="catalog__list catalog__list--directory">
+
+        <li class="catalog__item catalog__item--directory">
           <div class="directory">
             <div class="directory__wrap">
               <div class="directory__img-wrap">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="img/slim500.png" style="width: 100px; height: 100px;" alt="500slim">
               </div>
 
               <div class="directory__info-wrap">
-                <strong class="directory__heading">
+                <h3 class="directory__heading">
                   Cat Energy slim 500 г
-                </strong>
-              </div>
-
-              <dl class="directory__nav">
-                <div class="directory__list-wrap">
-                  <dt class="directory__property">Масса</dt>
-                  <dd class="directory__value">500 г</dd>
-                </div>
-
-                <div class="directory__list-wrap">
-                  <dt class="directory__property">Вкус</dt>
-                  <dd class="directory__value">Рис</dd>
-                </div>
-
-                <div class="directory__list-wrap">
-                  <dt class="directory__property">Цена</dt>
-                  <dd class="directory__value">500 Р.</dd>
-                </div>
-              </dl>
-            </div>
-
-            <div class="directory__button-wrap">
-              <button class="basic-button" type="button">Заказать</button>
-            </div>
-          </div>
-        </li>
-
-        <li class="catalog__list catalog__list--directory">
-          <div class="directory">
-            <div class="directory__wrap">
-              <div class="directory__img-wrap">
-                <img src="https://via.placeholder.com/150x150">
-              </div>
-
-              <div class="directory__info-wrap">
-                <strong class="directory__heading">
-                  Cat Energy slim 500 г
-                </strong>
+                </h3>
               </div>
 
               <dl class="directory__nav">
@@ -269,17 +234,17 @@
           </div>
         </li>
 
-        <li class="catalog__list catalog__list--directory">
+        <li class="catalog__item catalog__item--directory">
           <div class="directory">
             <div class="directory__wrap">
               <div class="directory__img-wrap">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="img/slim1000.png" style="width: 100px; height: 100px;" alt="1000chicken">
               </div>
 
               <div class="directory__info-wrap">
-                <strong class="directory__heading">
+                <h3 class="directory__heading">
                   Cat Energy slim 1000 г
-                </strong>
+                </h3>
               </div>
 
               <dl class="directory__nav">
@@ -306,7 +271,45 @@
           </div>
         </li>
 
-        <li class="catalog__list catalog__list--directory">
+
+        <li class="catalog__item catalog__item--directory">
+          <div class="directory">
+            <div class="directory__wrap">
+              <div class="directory__img-wrap">
+                <img src="img/rice500.png" style="width: 100px; height: 100px;" alt="500rice">
+              </div>
+
+              <div class="directory__info-wrap">
+                <h3 class="directory__heading">
+                  Cat Energy slim 500 г
+                </h3>
+              </div>
+
+              <dl class="directory__nav">
+                <div class="directory__list-wrap">
+                  <dt class="directory__property">Масса</dt>
+                  <dd class="directory__value">500 г</dd>
+                </div>
+
+                <div class="directory__list-wrap">
+                  <dt class="directory__property">Вкус</dt>
+                  <dd class="directory__value">Рис</dd>
+                </div>
+
+                <div class="directory__list-wrap">
+                  <dt class="directory__property">Цена</dt>
+                  <dd class="directory__value">500 Р.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="directory__button-wrap">
+              <button class="basic-button" type="button">Заказать</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="catalog__item catalog__item--directory">
           <div class="directory">
             <div class="directory__wrap">
               <div class="directory__img-wrap">
@@ -314,9 +317,9 @@
               </div>
 
               <div class="directory__info-wrap">
-                <strong class="directory__heading">
+                <h3 class="directory__heading">
                   Показать еще 100500 товаров
-                </strong>
+                </h3>
               </div>
               <div class="directory__text-wrap">
                 <p class="directory_text">
@@ -333,79 +336,77 @@
       </ul>
     </div>
 
-    <!-- <section> -->
     <h2 class="basic-heading">Дополнительные товары</h2>
 
-    <ul class="catalog__navigation">
-      <li class="catalog__list catalog__list--extra">
+    <ul class="catalog__list">
+      <li class="catalog__item catalog__item--extra">
         <div class="extra">
-          <strong class="extra__heading">
+          <h3 class="extra__heading">
             Сахарозаменитель
-          </strong>
-          <dl class="directory__nav">
-            <div class="directory__list-wrap">
-              <dt class="directory__property">1 упаковка (100 г)</dt>
-              <dd class="directory__value">200 Р.</dd>
+          </h3>
+          <dl class="extra__nav">
+            <div class="extra__list-wrap">
+              <dt class="extra__property">1 упаковка (100 г)</dt>
+              <dd class="extra__value">200 Р.</dd>
             </div>
           </dl>
-          <div class="directory__button-wrap">
+          <div class="extra__button-wrap">
             <button class="basic-button" type="button">Заказать</button>
           </div>
         </div>
       </li>
 
-      <li class="catalog__list catalog__list--extra">
+      <li class="catalog__item catalog__item--extra">
         <div class="extra">
-          <strong class="extra__heading">
+          <h3 class="extra__heading">
             Питьевая вода
-          </strong>
-          <dl class="directory__nav">
-            <div class="directory__list-wrap">
-              <dt class="directory__property">5 литров</dt>
-              <dd class="directory__value">50 Р.</dd>
+          </h3>
+          <dl class="extra__nav">
+            <div class="extra__list-wrap">
+              <dt class="extra__property">5 литров</dt>
+              <dd class="extra__value">50 Р.</dd>
             </div>
           </dl>
-          <div class="directory__button-wrap">
+          <div class="extra__button-wrap">
             <button class="basic-button" type="button">Заказать</button>
           </div>
         </div>
       </li>
 
-      <li class="catalog__list catalog__list--extra">
+      <li class="catalog__item catalog__item--extra">
         <div class="extra">
-          <strong class="extra__heading">
+          <h3 class="extra__heading">
             Молоко
-          </strong>
-          <dl class="directory__nav">
-            <div class="directory__list-wrap">
-              <dt class="directory__property">1 литр</dt>
-              <dd class="directory__value">100 Р.</dd>
+          </h3>
+          <dl class="extra__nav">
+            <div class="extra__list-wrap">
+              <dt class="extra__property">1 литр</dt>
+              <dd class="extra__value">100 Р.</dd>
             </div>
           </dl>
-          <div class="directory__button-wrap">
+          <div class="extra__button-wrap">
             <button class="basic-button" type="button">Заказать</button>
           </div>
         </div>
       </li>
 
-      <li class="catalog__list catalog__list--extra">
+      <li class="catalog__item catalog__item--extra">
         <div class="extra">
-          <strong class="extra__heading">
+          <h3 class="extra__heading">
             Витамины
-          </strong>
-          <dl class="directory__nav">
-            <div class="directory__list-wrap">
-              <dt class="directory__property">1 упаковка (30 г)</dt>
-              <dd class="directory__value">300 Р.</dd>
+          </h3>
+          <dl class="extra__nav">
+            <div class="extra__list-wrap">
+              <dt class="extra__property">1 упаковка (30 г)</dt>
+              <dd class="extra__value">300 Р.</dd>
             </div>
           </dl>
-          <div class="directory__button-wrap">
+          <div class="extra__button-wrap">
             <button class="basic-button" type="button">Заказать</button>
           </div>
         </div>
       </li>
     </ul>
-    <!-- </section> -->
 
     <div class="catalog__gift">
       <span class="catalog__icon"></span>
@@ -413,7 +414,6 @@
         <p class="catalog__text"></p>
       </div>
     </div>
-
   </section>
 
 
@@ -434,28 +434,30 @@
       </div>
 
       <div class="map__wrap-img">
-        <img src="https://via.placeholder.com/150x150">
+        <img src="img/map.png" style="width: 100px; height: 100px;" alt="map">
       </div>
     </div>
   </section>
 
   <footer class="footer-page">
     <div class="footer-page__wrap">
-      <div class="footer-page__logo">
-
+      <div class="footer-page__logo-wrap">
+        <span class="icon-i-html footer-page__logo"></span>
       </div>
       <div class="footer-page__social social">
-        <ul class="social__nav">
-          <li class="social__list">
-            <a href="#" class="social__link social__link--vkontacte"></a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vkontacte" title="vkontacte"></a>
           </li>
 
-          <li class="social__list">
-            <a href="#" class="social__link social__link--instagram"></a>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram" title="instagram"></a>
           </li>
 
-          <li class="social__list">
-            <a href="#" class="social__link social__link--facebook"></a>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook" title="facebook">
+              <span class="icon-i-vk" style="width: 15xp; height: 15px;"></span>
+            </a>
           </li>
         </ul>
       </div>
@@ -463,7 +465,9 @@
       <div class="footer-page__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy </a>
 
-        <img src="https://via.placeholder.com/150x150">.
+        <div class="footer-page__icon-wrap">
+          <span class="icon-i-html footer-page__icon"></span>
+        </div>
       </div>
     </div>
   </footer>

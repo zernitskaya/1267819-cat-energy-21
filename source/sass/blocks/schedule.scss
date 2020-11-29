@@ -1,0 +1,63 @@
+.schedule {
+  padding: 0 20px;
+}
+
+.schedule__wrap {
+  padding: 20px 20px;
+  background: $basic_grey;
+  margin-bottom: 20px;
+}
+
+.schedule__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.schedule__wrap-heading {
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.schedule__text {
+  margin-bottom: 15px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.schedule__icon {
+  width: 50px;
+  height: 50px;
+  background: $basic_green;
+  border-radius: 50%;
+  position: relative;
+}
+
+.schedule__icon-icon {
+  position: absolute;
+}
+
+.schedule__wrap-button {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.schedule__button {
+  display: flex;
+  align-items: center;
+  vertical-align: baseline;
+  border: none;
+  text-transform: uppercase;
+}
+
+.schedule__icon-arrow {
+  width: 24px;
+  height: 12px;
+  padding-right: 17px;
+}

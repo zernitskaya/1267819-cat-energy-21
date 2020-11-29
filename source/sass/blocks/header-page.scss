@@ -1,0 +1,14 @@
+.header-page {
+  height: 64px;
+  background: #ffffff;
+}
+
+.header-page__wrap {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-page__list {
+  display: none;
+}

@@ -1,0 +1,50 @@
+.promo__wrap {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+}
+
+.promo__green {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  min-height: 302px;
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("/img/bg-cat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__heading {
+  padding-top: 27px;
+  font-size: 36px;
+  font-family: "Oswald", sans-serif;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.promo__text {
+  padding-bottom: 29px;
+  padding-top: 25px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo__white {
+  padding: 0 20px;
+}
+
+.promo__img-wrap {
+  text-align: center;
+}
+
+.promo__button-wrap {
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.offer {
+  padding: 0 20px;
+}
+
+.offer__wrap {
+  display: flex;
+}
+
+.offer__wrap-icon {
+  width: 60px;
+  height: 60px;
+  background: $basic_green;
+  margin-bottom: 20px;
+}
+
+.offer__icon {
+  padding: 20px;
+}
+
+.offer__text {
+  width: 200px;
+  padding-left: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
