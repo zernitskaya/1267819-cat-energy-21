@@ -1,5 +1,5 @@
 @mixin icon($name) {
-  background-image: url('/img/icons/#{$name}');
+  background-image: url("/img/icons/#{$name}");
 }
 
 [class*="icon-i"] {
@@ -11,27 +11,49 @@
   background-repeat: no-repeat;
 }
 
-.icon-i-cat { @include icon('icon-cat.svg'); }
+.icon-i-cat {
+  @include icon("icon-cat.svg");
+}
 
-.icon-i-arrow { @include icon('arrow.svg'); }
+.icon-i-arrow {
+  @include icon("arrow.svg");
+}
 
-.icon-i-panther { @include icon('panther.svg'); }
+.icon-i-panther {
+  @include icon("panther.svg");
+}
 
-.icon-i-clok { @include icon('clok.svg'); }
+.icon-i-clok {
+  @include icon("clok.svg");
+}
 
-.icon-i-glass { @include icon('glass.svg'); }
+.icon-i-glass {
+  @include icon("glass.svg");
+}
 
-.icon-i-leaf { @include icon('leaf.svg'); }
+.icon-i-leaf {
+  @include icon("leaf.svg");
+}
 
-.icon-i-eat { @include icon('eat.svg'); }
+.icon-i-eat {
+  @include icon("eat.svg");
+}
 
-.icon-i- { @include icon('arrow.svg'); }
+.icon-i- {
+  @include icon("arrow.svg");
+}
 
-.icon-i-vk { @include icon('vk.svg'); }
+.icon-i-vk {
+  @include icon("vk.svg");
+}
 
-.icon-i-html { @include icon('html-academy.svg'); }
+.icon-i-html {
+  @include icon("html-academy.svg");
+}
 
-.icon-i-logo-footer { @include icon('footer-logo.svg'); }
+.icon-i-logo-footer {
+  @include icon("footer-logo.svg");
+}
 
-// .icon-i- { @include icon('arrow.svg'); }
-// .icon-i- { @include icon('arrow.svg'); }
+// .icon-i- { @include icon("arrow.svg"); }
+// .icon-i- { @include icon("arrow.svg"); }
