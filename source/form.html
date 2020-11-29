@@ -54,7 +54,7 @@
     </div>
 
     <fieldset class="page-form__program-wrap">
-      <ul class="page-form__list-program">
+      <ul class="page-form__list page-form__list-program">
         <li class="page-form__program-item">
           <label class="form">
             ИМЯ:*
@@ -79,7 +79,7 @@
     </fieldset>
 
     <fieldset class="page-form__program-wrap">
-      <ul class="page-form__list-choice">
+      <ul class="page-form__list page-form__list-choice">
         <li class="page-form__item-choice">
           <label class="radio-form">
             <input class="radio-form__input" type="radio">
@@ -106,13 +106,13 @@
       </ul>
     </fieldset>
 
-    <fieldset class="page-form__contacts-wrap">
-      <legend class="page-form__contacts">
-        Контактные данные (владельца кота)
+    <fieldset class="page-form__contacts-wrap page-form__legend-wrap">
+      <legend class="page-form__contacts page-form__legend">
+        Контактные данные <br> (владельца кота)
       </legend>
 
       <nav class="page-form__nav">
-        <ul class="page-form__list-contacts">
+        <ul class="page-form__list page-form__list-contacts">
           <li class="page-form__contacts-list">
             <label class="form">
               E-mail:*
@@ -132,22 +132,22 @@
       </nav>
     </fieldset>
 
-    <fieldset class="page-form__comments-wrap">
-      <legend class="page-form__comments">
+    <fieldset class="page-form__comments-wrap page-form__legend-wrap">
+      <legend class="page-form__comments page-form__legend">
         Комментарий
       </legend>
       <div class="page-form__textarea-wrap">
-        <textarea class="textarea" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+        <textarea class="page-form__textarea" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
       </div>
     </fieldset>
 
-    <fieldset class="page-form__additionally-wrap">
-      <legend class="page-form__additionally">
+    <fieldset class="page-form__additionally-wrap page-form__legend-wrap">
+      <legend class="page-form__additionally page-form__legend">
         Дополнительно
       </legend>
 
       <nav class="page-form__nav">
-        <ul class="page-form__list-additionally">
+        <ul class="page-form__list page-form__list-additionally">
           <li class="page-form__item-check">
             <label class="checkbox">
               <span class="checkbox-style"></span>
@@ -209,11 +209,12 @@
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
-
-        <div class="map__wrap-img">
-          <img src="img/map.png" style="width: 100px; height: 100px;" alt="map">
-        </div>
       </div>
+
+      <div class="map__wrap-img">
+        <img src="img/map.png" style="width: 100px; height: 100px;" alt="map">
+      </div>
+    </div>
   </section>
 
   <footer class="footer-page">
