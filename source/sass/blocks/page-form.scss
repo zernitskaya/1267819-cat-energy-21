@@ -1,3 +1,58 @@
-.test {
-  color: #000000;
+.page-form__program-wrap {
+  border: 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.page-form {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0 20px;
+}
+
+.page-form__heading {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.page-form__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page-form__list {
+  list-style: none;
+}
+
+.page-form__list-choice {
+  margin-top: 25px;
+}
+
+.page-form__legend-wrap {
+  border: 0;
+  border-top: 2px solid #68b738;
+  margin-top: 26px;
+}
+
+.page-form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.page-form__textarea-wrap {
+  margin-top: 35px;
+}
+
+.page-form__textarea {
+  min-width: 280px;
+  min-height: 150px;
+}
+
+.page-form__button-wrap {
+  width: 280px;
+  height: 40px;
+  margin: 21px 0;
 }
