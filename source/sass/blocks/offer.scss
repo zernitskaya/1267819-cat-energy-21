@@ -5,6 +5,27 @@
 
 .offer {
   padding: 0 20px;
+
+  @include midle-mobile {
+    padding: 0 25px;
+  }
+
+  @include midle-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+
+  @include tablet {
+    padding: 0 30px;
+  }
+
+  @include midle-tablet {
+    padding: 0 60px;
+  }
+
+  @include midle-desk {
+    padding: 0 110px;
+  }
 }
 
 .offer__wrap {

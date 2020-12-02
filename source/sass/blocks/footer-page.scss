@@ -3,5 +3,21 @@
 }
 
 .footer-page__wrap {
-  background-color: rebeccapurple;
+  padding: 0 20px;
+
+  @include midle-mobile {
+    padding: 0 25px;
+  }
+
+  @include tablet {
+    padding: 0 30px;
+  }
+
+  @include midle-tablet {
+    padding: 0 60px;
+  }
+
+  @include midle-desk {
+    padding: 0 110px;
+  }
 }

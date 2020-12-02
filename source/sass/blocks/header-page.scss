@@ -1,14 +1,78 @@
 .header-page {
   height: 64px;
+  margin-top: 11px;
   background: #ffffff;
+
+  @include tablet {
+    margin-top: 25px;
+  }
 }
 
 .header-page__wrap {
-  padding: 0 20px;
   display: flex;
+  align-items: center;
+  padding: 0 20px;
   justify-content: space-between;
+}
+
+.header-page__img {
+  width: 33px;
+  height: 37px;
+
+  @include tablet {
+    width: 174px;
+    height: 51px;
+  }
+}
+
+.header-page__tablet-logo {
+  width: 100px;
+  height: 30px;
+}
+
+.header-page__img-text {
+  text-align: center;
+  width: 100px;
+  height: 17px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.header-page__logo {
+  display: flex;
+  align-items: center;
 }
 
 .header-page__list {
   display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.header-page__link {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.header-page__item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.header-page__hidden {
+  display: none;
+}
+
+.header-page__hidden:checked ~ .header-page__list {
+  display: block;
 }
