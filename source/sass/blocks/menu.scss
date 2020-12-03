@@ -1,0 +1,18 @@
+.menu {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu__border {
+  display: block;
+  width: 18px;
+  height: 1px;
+  margin: 2px;
+  background: #000000;
+}

@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 22px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .promo__green {
@@ -15,6 +20,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include tablet {
+    background-image: none;
+  }
 }
 
 .promo__heading {
@@ -25,6 +34,14 @@
   text-align: center;
   color: #ffffff;
   text-transform: none;
+
+  @include tablet {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 117px;
+  }
 }
 
 .promo__text {
@@ -33,10 +50,29 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+
+  @include tablet {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 117px;
+  }
+}
+
+.promo__about {
+  @include tablet {
+    color: #000000;
+  }
 }
 
 .promo__white {
   padding: 0 20px;
+
+  @include tablet {
+    order: 2;
+    margin-top: -97px;
+  }
 }
 
 .promo__img-wrap {
@@ -47,4 +83,21 @@
   width: 280px;
   height: 40px;
   margin: 0 auto;
+
+  @include tablet {
+    z-index: 1;
+    width: 244px;
+    height: 54px;
+    margin-left: 117px;
+  }
+}
+
+.promo__img {
+  width: 280px;
+  height: 270px;
+
+  @include tablet {
+    width: 709px;
+    height: 609px;
+  }
 }
