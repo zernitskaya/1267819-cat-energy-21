@@ -6,11 +6,11 @@
 .offer {
   padding: 0 20px;
 
-  @include midle-mobile {
+  @include middle-mobile {
     padding: 0 25px;
   }
 
-  @include midle-mobile {
+  @include middle-mobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
@@ -19,11 +19,11 @@
     padding: 0 30px;
   }
 
-  @include midle-tablet {
+  @include middle-tablet {
     padding: 0 60px;
   }
 
-  @include midle-desk {
+  @include middle-desk {
     padding: 0 110px;
   }
 }

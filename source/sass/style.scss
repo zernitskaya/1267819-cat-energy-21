@@ -5,7 +5,7 @@
 @import "variables";
 @import "mixins";
 @import "icons";
-@import "blocks/body.scss";
+@import "blocks/body";
 @import "blocks/header-page";
 @import "blocks/promo";
 @import "blocks/basic-button";
@@ -21,8 +21,8 @@
 @import "blocks/checkbox";
 @import "blocks/catalog";
 @import "blocks/directory";
-@import "blocks/basic-heading.scss";
+@import "blocks/basic-heading";
 @import "blocks/menu.scss";
-// @import "extra";
+@import "blocks/visually-hidden";
 // @import "extra";
 // @import "extra";

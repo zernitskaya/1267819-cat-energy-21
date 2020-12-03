@@ -1,16 +1,16 @@
-@mixin desctop() {
+@mixin desktop() {
   @media screen and (min-width: 1400px) {
     @content;
   }
 }
 
-@mixin midle-desk() {
+@mixin middle-desk() {
   @media screen and (min-width: 1200px) {
     @content;
   }
 }
 
-@mixin midle-tablet() {
+@mixin middle-tablet() {
   @media screen and (min-width: 992px) {
     @content;
   }
@@ -22,7 +22,7 @@
   }
 }
 
-@mixin midle-mobile() {
+@mixin middle-mobile() {
   @media screen and (min-width: 576px) {
     @content;
   }
