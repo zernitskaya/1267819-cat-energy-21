@@ -64,58 +64,60 @@
       </p>
     </div>
 
-    <fieldset class="page-form__program-wrap">
-      <ul class="page-form__list page-form__list-program">
-        <li class="page-form__program-item">
-          <label class="form">
-            ИМЯ:*
-            <input type="text" class="form__input" placeholder="барсик">
-          </label>
-        </li>
+    <div class="wrap__form">
+      <fieldset class="page-form__program-wrap">
+        <ul class="page-form__list page-form__list-program">
+          <li class="page-form__program-item">
+            <label class="form">
+              ИМЯ:*
+              <input type="text" class="form__input" placeholder="барсик">
+            </label>
+          </li>
 
-        <li class="page-form__program-item">
-          <label class="form">
-            Вес (кг):*
-            <input type="text" class="form__input" placeholder="7">
-          </label>
-        </li>
+          <li class="page-form__program-item">
+            <label class="form">
+              Вес (кг):*
+              <input type="text" class="form__input" placeholder="7">
+            </label>
+          </li>
 
-        <li class="page-form__program-item">
-          <label class="form">
-            Возраст (лет):
-            <input type="text" class="form__input" placeholder="7">
-          </label>
-        </li>
-      </ul>
-    </fieldset>
+          <li class="page-form__program-item">
+            <label class="form">
+              Возраст (лет):
+              <input type="text" class="form__input" placeholder="7">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
 
-    <fieldset class="page-form__program-wrap">
-      <ul class="page-form__list page-form__list-choice">
-        <li class="page-form__item-choice">
-          <label class="radio-form">
-            <input class="radio-form__input" type="radio">
-            <span class="radio-form__style"></span>
-            Похудение
-          </label>
-        </li>
+      <fieldset class="page-form__program-wrap">
+        <ul class="page-form__list page-form__list-choice">
+          <li class="page-form__item-choice">
+            <label class="radio-form">
+              <input class="radio-form__input" type="radio">
+              <span class="radio-form__style"></span>
+              Похудение
+            </label>
+          </li>
 
-        <li class="page-form__item-choice">
-          <label class="radio-form">
-            <input class="radio-form__input" type="radio">
-            <span class="radio-form__style"></span>
-            Набор массы
-          </label>
-        </li>
+          <li class="page-form__item-choice">
+            <label class="radio-form">
+              <input class="radio-form__input" type="radio">
+              <span class="radio-form__style"></span>
+              Набор массы
+            </label>
+          </li>
 
-        <li class="page-form__item-choice">
-          <label class="radio-form">
-            <input class="radio-form__input" type="radio">
-            <span class="radio-form__style"></span>
-            Не знаю (Нужен ваш совет)
-          </label>
-        </li>
-      </ul>
-    </fieldset>
+          <li class="page-form__item-choice">
+            <label class="radio-form">
+              <input class="radio-form__input" type="radio">
+              <span class="radio-form__style"></span>
+              Не знаю (Нужен ваш совет)
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </div>
 
     <fieldset class="page-form__contacts-wrap page-form__legend-wrap">
       <legend class="page-form__contacts page-form__legend">
@@ -157,7 +159,7 @@
         Дополнительно
       </legend>
 
-      <nav class="page-form__nav">
+      <nav class="page-form__nav page-form__nav-additionally">
         <ul class="page-form__list page-form__list-additionally">
           <li class="page-form__item-check">
             <label class="checkbox">
@@ -193,14 +195,16 @@
         </ul>
       </nav>
 
-      <div class="page-form__button-wrap">
-        <button class="basic-button" type="button"> Отправить заявку </button>
-      </div>
+      <div class="page-form__button-text-wrap">
+        <div class="page-form__button-wrap">
+          <button class="basic-button" type="button"> Отправить заявку </button>
+        </div>
 
-      <div class="page-form__wrap-text">
-        <p class="page-form__text">
-          * — Обязательные поля
-        </p>
+        <div class="page-form__wrap-text">
+          <p class="page-form__important-text">
+            * — Обязательные поля
+          </p>
+        </div>
       </div>
 
     </fieldset>

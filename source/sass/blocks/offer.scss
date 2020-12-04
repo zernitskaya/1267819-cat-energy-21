@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.offer__wraper {
-  padding: 0 20px;
-}
-
 .offer__heading {
   padding: 38px 20px;
   font-size: 36px;
@@ -83,48 +79,40 @@
   line-height: 18px;
 
   @include middle-mobile {
-  padding-left: 0;
-  font-size: 16px;
-    line-height: 24px;
-  }
-
-  @include middle-tablet {
-
+    padding-left: 0;
+    font-size: 16px;
+    ine-height: 24px;
   }
 }
 
 .offer__wrap-1 {
-
   @include middle-mobile {
-  background-image: url(/img/1.svg);
-  background-position: right;
-  background-repeat: no-repeat;
+    background-image: url("/source/img/1.svg");
+    background-position: right;
+    background-repeat: no-repeat;
   }
 }
 
 .offer__wrap-2 {
-
   @include middle-mobile {
-  background-image: url(/img/2.svg);
-  background-position: right;
-  background-repeat: no-repeat;
+    background-image: url("/source/img/2.svg");
+    background-position: right;
+    background-repeat: no-repeat;
   }
 }
 
 .offer__wrap-3 {
-
   @include middle-mobile {
-    background-image: url(/img/3.svg);
+    background-image: url("/source/img/3.svg");
     background-position: right;
     background-repeat: no-repeat;
-    }
+  }
 }
 
 .offer__wrap-4 {
-
-   @include middle-mobile {
-  background-image: url(/img/4.svg);
-  background-position: right;
-  background-repeat: no-repeat;
+  @include middle-mobile {
+    background-image: url("/source/img/4.svg");
+    background-position: right;
+    background-repeat: no-repeat;
   }
 }
