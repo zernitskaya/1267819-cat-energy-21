@@ -1,5 +1,5 @@
 .map__wrap {
-  padding: 0 20px;
+  // padding: 0 20px;
   background: #ffffff;
 
   @include middle-mobile {
@@ -21,4 +21,39 @@
 
 .map__contacts {
   display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  background: #ffffff;
+
+  @include tablet {
+    justify-content: space-between;
+  }
+}
+
+.map__wrap-heading {
+  width: 140px;
+  padding-right: 20px;
+}
+
+.map__heading {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.map__wrap-text {
+  min-width: 140px;
+}
+
+.map__wrap-img {
+  width: 320px;
+  height: 360px;
+  background-image: url("/img/map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include tablet {
+    min-width: 768px;
+  }
 }

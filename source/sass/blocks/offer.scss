@@ -3,7 +3,27 @@
   padding: 0;
 }
 
-.offer {
+.offer__wraper {
+  padding: 0 20px;
+}
+
+.offer__heading {
+  padding: 38px 20px;
+  font-size: 36px;
+  line-height: 40px;
+
+  @include tablet {
+    padding: 45px 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @include middle-desk {
+    padding: 75px 110px;
+  }
+}
+
+.offer__wraper {
   padding: 0 20px;
 
   @include middle-mobile {
@@ -12,7 +32,7 @@
 
   @include middle-mobile {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   }
 
   @include tablet {
@@ -21,6 +41,8 @@
 
   @include middle-tablet {
     padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   @include middle-desk {
@@ -30,6 +52,13 @@
 
 .offer__wrap {
   display: flex;
+
+  @include middle-mobile {
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 280px;
+    margin: 20px;
+  }
 }
 
 .offer__wrap-icon {
@@ -40,7 +69,10 @@
 }
 
 .offer__icon {
-  padding: 20px;
+  width: 25px;
+  height: 28px;
+  margin-top: 16px;
+  margin-left: 16px;
 }
 
 .offer__text {
@@ -49,4 +81,50 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+
+  @include middle-mobile {
+  padding-left: 0;
+  font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include middle-tablet {
+
+  }
+}
+
+.offer__wrap-1 {
+
+  @include middle-mobile {
+  background-image: url(/img/1.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  }
+}
+
+.offer__wrap-2 {
+
+  @include middle-mobile {
+  background-image: url(/img/2.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  }
+}
+
+.offer__wrap-3 {
+
+  @include middle-mobile {
+    background-image: url(/img/3.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    }
+}
+
+.offer__wrap-4 {
+
+   @include middle-mobile {
+  background-image: url(/img/4.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  }
 }
