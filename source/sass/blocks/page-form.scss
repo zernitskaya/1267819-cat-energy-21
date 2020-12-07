@@ -71,6 +71,10 @@
     padding-left: 27px;
     padding-top: 38px;
   }
+
+  @include middle-tablet {
+    margin-top: 0;
+  }
 }
 
 .page-form__legend-wrap {
@@ -132,7 +136,6 @@
     height: 52px;
   }
 
-
   @include middle-tablet {
     width: 568px;
     height: 52px;
@@ -181,6 +184,22 @@
   }
 }
 
-.wrap__form {
-  display: flex;
+.page-form__wrapper-input {
+  @include middle-tablet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+
+.page-form__list-contacts {
+  @include middle-tablet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+
+.page-form__item-contacts:not(:first-child) {
+  @include middle-tablet {
+    margin-left: 50px;
+  }
 }
