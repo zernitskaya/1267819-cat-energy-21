@@ -1,5 +1,4 @@
 .map__wrap {
-  // padding: 0 20px;
   background: #ffffff;
 
   @include middle-mobile {
@@ -48,7 +47,7 @@
 .map__wrap-img {
   width: 320px;
   height: 360px;
-  background-image: url("/source/img/map.png");
+  background-image: url("/img/map.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
