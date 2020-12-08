@@ -10,6 +10,10 @@
   }
 
   @include middle-tablet {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    display: flex;
+    justify-content: center;
     padding: 0 60px;
   }
 
@@ -27,6 +31,13 @@
     position: relative;
     padding-top: 70px;
     padding-bottom: 50px;
+    margin-left: 40px;
+  }
+}
+
+.schedule__wrap:not(:first-child) {
+  @include middle-tablet {
+    margin-left: 50px;
   }
 }
 

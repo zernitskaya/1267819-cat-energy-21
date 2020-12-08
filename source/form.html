@@ -64,58 +64,60 @@
       </p>
     </div>
 
-    <fieldset class="page-form__program-wrap">
-      <ul class="page-form__list page-form__list-program">
-        <li class="page-form__program-item">
-          <label class="form">
-            ИМЯ:*
-            <input type="text" class="form__input" placeholder="барсик">
-          </label>
-        </li>
+    <div class="page-form__wrapper-input">
+      <fieldset class="page-form__program-wrap">
+        <ul class="page-form__list page-form__list-program">
+          <li class="page-form__program-item">
+            <label class="form">
+              ИМЯ:*
+              <input type="text" class="form__input" placeholder="барсик" required>
+            </label>
+          </li>
 
-        <li class="page-form__program-item">
-          <label class="form">
-            Вес (кг):*
-            <input type="text" class="form__input" placeholder="7">
-          </label>
-        </li>
+          <li class="page-form__program-item">
+            <label class="form">
+              Вес (кг):*
+              <input type="text" class="form__input" placeholder="7" required>
+            </label>
+          </li>
 
-        <li class="page-form__program-item">
-          <label class="form">
-            Возраст (лет):
-            <input type="text" class="form__input" placeholder="7">
-          </label>
-        </li>
-      </ul>
-    </fieldset>
+          <li class="page-form__program-item">
+            <label class="form">
+              Возраст (лет):
+              <input type="text" class="form__input" placeholder="7">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
 
-    <fieldset class="page-form__program-wrap">
-      <ul class="page-form__list page-form__list-choice">
-        <li class="page-form__item-choice">
-          <label class="radio-form">
-            <input class="radio-form__input" type="radio">
-            <span class="radio-form__style"></span>
-            Похудение
-          </label>
-        </li>
+      <fieldset class="page-form__program-wrap">
+        <ul class="page-form__list page-form__list-choice">
+          <li class="page-form__item-choice">
+            <label class="radio-form">
+              <input class="radio-form__input" type="radio">
+              <span class="radio-form__style"></span>
+              Похудение
+            </label>
+          </li>
 
-        <li class="page-form__item-choice">
-          <label class="radio-form">
-            <input class="radio-form__input" type="radio">
-            <span class="radio-form__style"></span>
-            Набор массы
-          </label>
-        </li>
+          <li class="page-form__item-choice">
+            <label class="radio-form">
+              <input class="radio-form__input" type="radio">
+              <span class="radio-form__style"></span>
+              Набор массы
+            </label>
+          </li>
 
-        <li class="page-form__item-choice">
-          <label class="radio-form">
-            <input class="radio-form__input" type="radio">
-            <span class="radio-form__style"></span>
-            Не знаю (Нужен ваш совет)
-          </label>
-        </li>
-      </ul>
-    </fieldset>
+          <li class="page-form__item-choice">
+            <label class="radio-form">
+              <input class="radio-form__input" type="radio">
+              <span class="radio-form__style"></span>
+              Не знаю (Нужен ваш совет)
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </div>
 
     <fieldset class="page-form__contacts-wrap page-form__legend-wrap">
       <legend class="page-form__contacts page-form__legend">
@@ -127,7 +129,7 @@
           <li class="page-form__contacts-list">
             <label class="form">
               E-mail:*
-              <input type="text" class="form__input" placeholder="kuklachev@gmail.com">
+              <input type="email" class="form__input" placeholder="kuklachev@gmail.com" required>
               <span class="form__icon"></span>
             </label>
           </li>
@@ -135,7 +137,7 @@
           <li class="page-form__item-contacts">
             <label class="form">
               Телефон:*
-              <input type="text" class="form__input" placeholder="8 (960) 900-60-90">
+              <input type="tel" class="form__input" placeholder="8 (960) 900-60-90" required>
               <span class="form__icon"></span>
             </label>
           </li>
@@ -157,7 +159,7 @@
         Дополнительно
       </legend>
 
-      <nav class="page-form__nav">
+      <nav class="page-form__nav page-form__nav-additionally">
         <ul class="page-form__list page-form__list-additionally">
           <li class="page-form__item-check">
             <label class="checkbox">
@@ -193,14 +195,16 @@
         </ul>
       </nav>
 
-      <div class="page-form__button-wrap">
-        <button class="basic-button" type="button"> Отправить заявку </button>
-      </div>
+      <div class="page-form__button-text-wrap">
+        <div class="page-form__button-wrap">
+          <button class="basic-button" type="submit"> Отправить заявку </button>
+        </div>
 
-      <div class="page-form__wrap-text">
-        <p class="page-form__text">
-          * — Обязательные поля
-        </p>
+        <div class="page-form__wrap-text">
+          <p class="page-form__important-text">
+            * — Обязательные поля
+          </p>
+        </div>
       </div>
 
     </fieldset>
@@ -223,7 +227,6 @@
       </div>
 
       <div class="map__wrap-img">
-        <img src="img/map.png" width="100" height="100" alt="map">
       </div>
     </div>
   </section>
@@ -231,28 +234,41 @@
   <footer class="footer-page">
     <div class="footer-page__wrap">
       <div class="footer-page__logo-wrap">
-        <span class="icon-i-html footer-page__logo"></span>
+        <span class="icon-i-logo-footer footer-page__logo"></span>
       </div>
+
+      <div class="footer-page__line">
+        <hr>
+      </div>
+
       <div class="footer-page__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--vkontacte" title="vkontacte"></a>
+            <a href="#" class="social__link social__link--vkontacte" title="vkontacte">
+              <span class="icon-i-vk social__icon"></span>
+            </a>
           </li>
 
           <li class="social__item">
-            <a href="#" class="social__link social__link--instagram" title="instagram"></a>
+            <a href="#" class="social__link social__link--instagram" title="instagram">
+              <span class="icon-i-vk social__icon"></span>
+            </a>
           </li>
 
           <li class="social__item">
             <a href="#" class="social__link social__link--facebook" title="facebook">
-              <span class="icon-i-vk" style="width: 15px; height: 15px;"></span>
+              <span class="icon-i-vk social__icon"></span>
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="footer-page__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy </a>
+      <div class="footer-page__line">
+        <hr>
+      </div>
+
+      <div class="footer-page__copyright">
+        <a class="footer-page__link-copyright" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy </a>
 
         <div class="footer-page__icon-wrap">
           <span class="icon-i-html footer-page__icon"></span>
