@@ -5,9 +5,11 @@
 }
 
 .offer__heading {
-  padding: 38px 20px;
+  padding: 7px 20px;
+  margin-bottom: 31px;
   font-size: 36px;
   line-height: 40px;
+  font-weight: normal;
 
   @include tablet {
     padding: 45px 30px;
@@ -22,6 +24,7 @@
 
 .offer__wraper {
   padding: 0 20px;
+  margin-bottom: 22px;
 
   @include middle-mobile {
     padding: 0 25px;
@@ -66,18 +69,20 @@
 }
 
 .offer__icon {
-  width: 25px;
-  height: 28px;
-  margin-top: 16px;
-  margin-left: 16px;
+  width: 28px;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .offer__text {
-  width: 200px;
+  width: 218px;
+  margin-top: 2px;
   padding-left: 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  color: $special_dark-grey;
 
   @include middle-mobile {
     padding-left: 0;

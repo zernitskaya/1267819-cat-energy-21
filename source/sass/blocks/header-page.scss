@@ -1,6 +1,5 @@
 .header-page {
-  height: 64px;
-  margin-top: 11px;
+  margin-top: 13px;
   background: #ffffff;
 
   @include tablet {
@@ -16,7 +15,7 @@
 }
 
 .header-page__img {
-  width: 33px;
+  width: 34px;
   height: 37px;
 
   @include tablet {
@@ -31,9 +30,10 @@
 }
 
 .header-page__img-text {
-  text-align: center;
-  width: 100px;
-  height: 17px;
+  width: 145px;
+  height: 18px;
+  margin-left: 34px;
+  margin-top: 4px;
 
   @include tablet {
     display: none;
@@ -43,6 +43,22 @@
 .header-page__logo {
   display: flex;
   align-items: center;
+
+  @include tablet {
+    margin-left: 11px;
+    margin-top: 2px;
+  }
+}
+
+.header-page__nav {
+  margin-right: 11px;
+  margin-bottom: 2px;
+
+
+  @include tablet {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .header-page__list {
@@ -51,22 +67,22 @@
   padding: 0;
   list-style: none;
 
-
   @include tablet {
     display: flex;
+    margin-top: 6px;
   }
 }
 
 .header-page__link {
   color: #000000;
   text-transform: uppercase;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
   text-decoration: none;
 }
 
 .header-page__item:not(:last-child) {
-  margin-right: 36px;
+  margin-right: 35px;
 }
 
 .header-page__hidden {

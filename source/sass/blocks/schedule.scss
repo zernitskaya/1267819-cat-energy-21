@@ -26,6 +26,7 @@
   padding: 20px 20px;
   background: $basic_grey;
   margin-bottom: 20px;
+  min-height: 266px;
 
   @include tablet {
     position: relative;
@@ -44,13 +45,16 @@
 .schedule__title {
   display: flex;
   align-items: center;
-  margin-bottom: 22px;
+  margin: 4px 0 22px 2px;
 }
 
 .schedule__heading {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  font-weight: normal;
+  margin-left: 19px;
+  margin-bottom: 2px;
   color: #000000;
 
   @include tablet {
@@ -61,7 +65,7 @@
 }
 
 .schedule__text {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -92,12 +96,14 @@
   }
 }
 
-.schedule__icon-icon {
-  position: absolute;
-}
+// .schedule__icon-icon {
+//   position: absolute;
+//   bottom: 3px;
+// }
 
 .schedule__wrap-button {
-  margin-top: 16px;
+  margin-top: 18px;
+  margin-left: -1px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -122,11 +128,24 @@
 .schedule__icon-arrow {
   width: 24px;
   height: 12px;
-  padding-right: 17px;
+  padding-left: 56px;
 }
 
 .schedule__line {
   @include tablet {
     display: none;
   }
+}
+
+.icon-i-panther {
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  top: 11px;
+  left: -9px;
+}
+
+.icon-i-cat {
+  position: absolute;
+  bottom: 3px;
 }

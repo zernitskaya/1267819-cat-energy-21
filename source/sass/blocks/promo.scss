@@ -27,13 +27,16 @@
 }
 
 .promo__heading {
-  padding-top: 27px;
-  font-size: 36px;
   font-family: "Oswald", sans-serif;
   line-height: 36px;
+  font-size: 36px;
+  font-weight: normal;
   text-align: center;
   color: #ffffff;
   text-transform: none;
+  padding-top: 27px;
+  padding-left: 1px;
+  margin-top: 15px;
 
   @include tablet {
     color: #000000;
@@ -45,11 +48,14 @@
 }
 
 .promo__text {
-  padding-bottom: 29px;
-  padding-top: 25px;
+  font-size: 14px;
+  line-height: 16px;
+  padding-right: 2px;
+  padding-bottom: 28px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  font-weight: normal;
 
   @include tablet {
     color: #000000;
@@ -63,6 +69,7 @@
 .promo__about {
   @include tablet {
     color: #000000;
+    margin-top: 20px;
   }
 }
 
@@ -100,4 +107,8 @@
     width: 709px;
     height: 609px;
   }
+}
+
+.promo__button {
+  margin-top: 1px;
 }
