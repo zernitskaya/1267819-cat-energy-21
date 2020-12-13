@@ -13,13 +13,13 @@
   <header class="header-page">
     <div class="header-page__wrap">
       <div class="header-page__logo">
-        <a href="#" class="header-page__logo-link">
+        <a href="index.html" class="header-page__logo-link">
           <picture>
             <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
             <img class="header-page__img" src="img/logo-mobile.svg" width="100" height="100" alt="logo">
           </picture>
         </a>
-        <a href="#" class="header-page__logo-link">
+        <a href="index.html" class="header-page__logo-link">
           <img class="header-page__img-text" src="img/logotext.svg" width="100" height="100" alt="logo">
         </a>
       </div>
@@ -35,15 +35,15 @@
         <input type="checkbox" class="header-page__hidden" id="menu">
         <ul class="header-page__list">
           <li class="header-page__item header-page__item--activ">
-            <a href="#" class="header-page__link header-page__link--activ">Главная</a>
+            <a href="index.html" class="header-page__link header-page__link--activ">Главная</a>
           </li>
 
           <li class="header-page__item">
-            <a href="#" class="header-page__link">Каталог продукции</a>
+            <a href="catalog.html" class="header-page__link">Каталог продукции</a>
           </li>
 
           <li class="header-page__item">
-            <a href="#" class="header-page__link">Подбор программы</a>
+            <a href="form.html" class="header-page__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -95,7 +95,7 @@
             </div>
 
             <div class="directory__button-wrap">
-              <button class="basic-button" type="button">Заказать</button>
+              <a class="basic-button" type="button">Заказать</a>
             </div>
           </div>
 
@@ -137,7 +137,7 @@
             </div>
 
             <div class="directory__button-wrap">
-              <button class="basic-button" type="button">Заказать</button>
+              <a class="basic-button" type="button">Заказать</a>
             </div>
           </div>
         </li>
@@ -176,7 +176,7 @@
             </div>
 
             <div class="directory__button-wrap">
-              <button class="basic-button" type="button">Заказать</button>
+              <a class="basic-button" type="button">Заказать</a>
             </div>
           </div>
         </li>
@@ -215,7 +215,7 @@
             </div>
 
             <div class="directory__button-wrap">
-              <button class="basic-button" type="button">Заказать</button>
+              <a class="basic-button" type="button">Заказать</a>
             </div>
           </div>
         </li>
@@ -255,7 +255,7 @@
             </div>
 
             <div class="directory__button-wrap">
-              <button class="basic-button" type="button">Заказать</button>
+              <a class="basic-button" type="button">Заказать</a>
             </div>
           </div>
         </li>
@@ -294,7 +294,7 @@
             </div>
 
             <div class="directory__button-wrap">
-              <button class="basic-button" type="button">Заказать</button>
+              <a class="basic-button" type="button">Заказать</a>
             </div>
           </div>
         </li>
@@ -334,7 +334,7 @@
             </div>
 
             <div class="directory__button-wrap">
-              <button class="basic-button" type="button">Заказать</button>
+              <a class="basic-button" type="button">Заказать</a>
             </div>
           </div>
         </li>
@@ -359,7 +359,7 @@
             </div>
 
             <div class="directory__button-wrap">
-              <button class="directory__button" type="button">Показать все</button>
+              <a class="directory__button" type="button">Показать все</a>
             </div>
           </div>
         </li>
@@ -368,71 +368,79 @@
 
     <h2 class="basic-heading">Дополнительные товары</h2>
 
-    <ul class="catalog__list">
+    <ul class="catalog__check-list">
       <li class="catalog__item catalog__item--extra">
         <div class="extra">
-          <h3 class="extra__heading">
-            Сахарозаменитель
-          </h3>
-          <dl class="extra__nav">
-            <div class="extra__list-wrap">
-              <dt class="extra__property">1 упаковка (100 г)</dt>
-              <dd class="extra__value">200 Р.</dd>
-            </div>
-          </dl>
+          <div class="extra__content-wrap">
+            <h3 class="extra__heading">
+              Сахарозаменитель
+            </h3>
+            <dl class="extra__nav">
+              <div class="extra__list-wrap">
+                <dt class="extra__property">1 упаковка (100 г)</dt>
+                <dd class="extra__value">200 Р.</dd>
+              </div>
+            </dl>
+          </div>
           <div class="extra__button-wrap">
-            <button class="basic-button" type="button">Заказать</button>
+            <a class="basic-button" type="button">Заказать</a>
           </div>
         </div>
       </li>
 
       <li class="catalog__item catalog__item--extra">
         <div class="extra">
-          <h3 class="extra__heading">
-            Питьевая вода
-          </h3>
-          <dl class="extra__nav">
-            <div class="extra__list-wrap">
-              <dt class="extra__property">5 литров</dt>
-              <dd class="extra__value">50 Р.</dd>
-            </div>
-          </dl>
+          <div class="extra__content-wrap">
+            <h3 class="extra__heading">
+              Питьевая вода
+            </h3>
+            <dl class="extra__nav">
+              <div class="extra__list-wrap">
+                <dt class="extra__property">5 литров</dt>
+                <dd class="extra__value">50 Р.</dd>
+              </div>
+            </dl>
+          </div>
           <div class="extra__button-wrap">
-            <button class="basic-button" type="button">Заказать</button>
+            <a class="basic-button" type="button">Заказать</a>
           </div>
         </div>
       </li>
 
       <li class="catalog__item catalog__item--extra">
         <div class="extra">
-          <h3 class="extra__heading">
-            Молоко
-          </h3>
-          <dl class="extra__nav">
-            <div class="extra__list-wrap">
-              <dt class="extra__property">1 литр</dt>
-              <dd class="extra__value">100 Р.</dd>
-            </div>
-          </dl>
+          <div class="extra__content-wrap">
+            <h3 class="extra__heading">
+              Молоко
+            </h3>
+            <dl class="extra__nav">
+              <div class="extra__list-wrap">
+                <dt class="extra__property">1 литр</dt>
+                <dd class="extra__value">100 Р.</dd>
+              </div>
+            </dl>
+          </div>
           <div class="extra__button-wrap">
-            <button class="basic-button" type="button">Заказать</button>
+            <a class="basic-button" type="button">Заказать</a>
           </div>
         </div>
       </li>
 
       <li class="catalog__item catalog__item--extra">
         <div class="extra">
-          <h3 class="extra__heading">
-            Витамины
-          </h3>
-          <dl class="extra__nav">
-            <div class="extra__list-wrap">
-              <dt class="extra__property">1 упаковка (30 г)</dt>
-              <dd class="extra__value">300 Р.</dd>
-            </div>
-          </dl>
+          <div class="extra__content-wrap">
+            <h3 class="extra__heading">
+              Витамины
+            </h3>
+            <dl class="extra__nav">
+              <div class="extra__list-wrap">
+                <dt class="extra__property">1 упаковка (30 г)</dt>
+                <dd class="extra__value">300 Р.</dd>
+              </div>
+            </dl>
+          </div>
           <div class="extra__button-wrap">
-            <button class="basic-button" type="button">Заказать</button>
+            <a class="basic-button" type="button">Заказать</a>
           </div>
         </div>
       </li>
@@ -441,11 +449,12 @@
     <div class="catalog__gift">
       <span class="catalog__icon"></span>
       <div class="catalog__text-wrap">
-        <p class="catalog__text"></p>
+        <p class="catalog__text">
+          Закажите все и получите чехол для кота в подарок!
+        </p>
       </div>
     </div>
   </section>
-
 
   <section class="map">
     <div class="map__wrap">
@@ -472,28 +481,41 @@
   <footer class="footer-page">
     <div class="footer-page__wrap">
       <div class="footer-page__logo-wrap">
-        <span class="icon-i-html footer-page__logo"></span>
+        <span class="icon-i-logo-footer footer-page__logo"></span>
       </div>
+
+      <div class="footer-page__line">
+        <hr>
+      </div>
+
       <div class="footer-page__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--vkontacte" title="vkontacte"></a>
+            <a href="#" class="social__link social__link--vkontacte" title="vkontacte">
+              <span class="icon-i-vk social__icon"></span>
+            </a>
           </li>
 
           <li class="social__item">
-            <a href="#" class="social__link social__link--instagram" title="instagram"></a>
+            <a href="#" class="social__link social__link--instagram" title="instagram">
+              <span class="icon-i-vk social__icon"></span>
+            </a>
           </li>
 
           <li class="social__item">
             <a href="#" class="social__link social__link--facebook" title="facebook">
-              <span class="icon-i-vk" style="width: 15px; height: 15px;"></span>
+              <span class="icon-i-vk social__icon"></span>
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="footer-page__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy </a>
+      <div class="footer-page__line">
+        <hr>
+      </div>
+
+      <div class="footer-page__copyright">
+        <a class="footer-page__link-copyright" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy </a>
 
         <div class="footer-page__icon-wrap">
           <span class="icon-i-html footer-page__icon"></span>
