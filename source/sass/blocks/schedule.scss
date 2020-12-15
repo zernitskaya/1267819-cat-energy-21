@@ -10,8 +10,6 @@
   }
 
   @include middle-tablet {
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     display: flex;
     justify-content: center;
     padding: 0 60px;
@@ -31,14 +29,30 @@
   @include tablet {
     position: relative;
     padding-top: 70px;
-    padding-bottom: 50px;
-    margin-left: 40px;
+    padding-bottom: 57px;
+    margin-bottom: 29px;
+  }
+
+  @include middle-tablet {
+    width: 100%;
+    padding-top: 47px;
+    padding-left: 39px;
+    padding-bottom: 15px;
+  }
+
+  @include middle-desk {
+    min-width: 570px;
   }
 }
 
 .schedule__wrap:not(:first-child) {
+  @include tablet {
+    padding-bottom: 79px;
+  }
+
   @include middle-tablet {
-    margin-left: 50px;
+    padding-bottom: 0;
+    margin-left: 80px;
   }
 }
 
@@ -46,6 +60,14 @@
   display: flex;
   align-items: center;
   margin: 4px 0 22px 2px;
+
+  @include tablet {
+    margin: 7px 0 20px 14px;
+  }
+
+  @include middle-tablet {
+    margin: 0 0 40px 13px;
+  }
 }
 
 .schedule__heading {
@@ -60,7 +82,18 @@
   @include tablet {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 24px;
+    padding-bottom: 3px;
+  }
+
+  @include middle-tablet {
+    padding-bottom: 2px;
+    padding-left: 43px;
+  }
+}
+
+.schedule__wrap-text {
+  @include middle-tablet {
+    padding-right: 25px;
   }
 }
 
@@ -74,9 +107,19 @@
   line-height: 18px;
 
   @include tablet {
-    width: 370px;
+    width: 377px;
     font-size: 16px;
     line-height: 24px;
+    margin-left: 32px;
+    margin-bottom: 52px;
+  }
+
+  @include middle-tablet {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 13px;
+    margin-bottom: 0;
   }
 }
 
@@ -90,16 +133,17 @@
   @include tablet {
     position: absolute;
     right: 62px;
-    top: 65px;
+    top: 92px;
     width: 200px;
     height: 200px;
   }
-}
 
-// .schedule__icon-icon {
-//   position: absolute;
-//   bottom: 3px;
-// }
+  @include middle-tablet {
+    width: 100px;
+    height: 100px;
+    position: static;
+  }
+}
 
 .schedule__wrap-button {
   margin-top: 18px;
@@ -107,6 +151,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  @include tablet {
+    margin-left: 32px;
+  }
+
+  @include middle-tablet {
+    margin: 26px 0 44px 13px;
+  }
 }
 
 .schedule__button {
@@ -129,6 +181,10 @@
   width: 24px;
   height: 12px;
   padding-left: 56px;
+
+  @include middle-tablet {
+    padding-left: 77px;
+  }
 }
 
 .schedule__line {
@@ -143,9 +199,36 @@
   position: absolute;
   top: 11px;
   left: -9px;
+
+  @include tablet {
+    width: 268px;
+    height: 112px;
+    position: absolute;
+    top: 43px;
+    left: -35px;
+  }
+
+  @include middle-tablet {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+  }
 }
 
 .icon-i-cat {
   position: absolute;
   bottom: 3px;
+
+  @include tablet {
+    height: 192px;
+    bottom: 19px;
+  }
+
+  @include middle-tablet {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
 }

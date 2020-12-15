@@ -7,7 +7,16 @@
   @include tablet {
     display: flex;
     flex-direction: column;
+    margin-bottom: -2px;
   }
+
+  @include middle-desk {
+    display: flex;
+  }
+}
+
+.promo__desk {
+  display: flex;
 }
 
 .promo__green {
@@ -23,6 +32,15 @@
 
   @include tablet {
     background-image: none;
+  }
+
+  @include middle-desk {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("/img/index-background-desktop.png");
+    right: 0;
+    width: 720px;
+    height: 694px;
+    margin-top: -116px;
   }
 }
 
@@ -62,14 +80,21 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    padding-left: 117px;
+    padding-left: 118px;
   }
 }
 
 .promo__about {
   @include tablet {
     color: #000000;
-    margin-top: 20px;
+    margin-top: 18px;
+    z-index: 1;
+  }
+
+  @include middle-desk {
+    position: relative;
+    margin-top: 65px;
+    margin-left: 73px;
   }
 }
 
@@ -80,22 +105,17 @@
     order: 2;
     margin-top: -97px;
   }
+
+  @include middle-desk {
+    margin-top: 256px;
+  }
 }
 
 .promo__img-wrap {
   text-align: center;
-}
-
-.promo__button-wrap {
-  width: 280px;
-  height: 40px;
-  margin: 0 auto;
 
   @include tablet {
-    z-index: 1;
-    width: 244px;
-    height: 54px;
-    margin-left: 117px;
+    margin-top: 15px;
   }
 }
 
@@ -107,8 +127,56 @@
     width: 709px;
     height: 609px;
   }
+
+  @include middle-desk {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    top: 25px;
+    right: 330px;
+  }
+}
+
+.promo__button-wrap {
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+
+  @include tablet {
+    z-index: 1;
+    width: 244px;
+    height: 54px;
+    margin-left: 112px;
+    margin-top: 21px;
+  }
+
+  @include middle-desk {
+    margin-left: 190px;
+    margin-top: 22px;
+  }
 }
 
 .promo__button {
   margin-top: 1px;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  height: 40px;
+  background: $basic_green;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-decoration: none;
+
+  @include tablet {
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

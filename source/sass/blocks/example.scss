@@ -1,16 +1,37 @@
 .example__wrap {
   padding: 0 20px;
   background: #eaeaea;
+
+  @include tablet {
+    padding: 0 30px;
+    background: #ffffff;
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .example__wrap-heading {
   padding: 27px 0;
+
+  @include tablet {
+    margin-top: 15px;
+  }
 }
 
 .example__heading {
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__wrap-text {
+  @include tablet {
+    margin-top: 37px;
+  }
 }
 
 .example__text {
@@ -20,6 +41,11 @@
   font-size: 14px;
   line-height: 18px;
   margin-top: 6px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__wrap-module {
@@ -27,12 +53,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
+
+  @include tablet {
+    align-items: center;
+    margin-top: 15px;
+  }
 }
 
 .example__module-size {
   position: relative;
   width: 123px;
   margin: 25px 1px;
+
+  @include tablet {
+    width: 161px;
+  }
 }
 
 .example__module-size::before {
@@ -44,13 +79,25 @@
   height: 75%;
   border: 1px solid #444444;
   border-radius: 3px;
+
+  @include tablet {
+    top: 15px;
+  }
 }
 
 .example__module-heading {
-  padding-top: 15px;
   font-size: 24px;
   line-height: 24px;
+  font-weight: normal;
   padding-bottom: 8px;
+  padding-top: 15px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 25px;
+    padding-bottom: 14px;
+  }
 }
 
 .example__module-text {
@@ -63,6 +110,14 @@
   font-size: 12px;
   line-height: 1;
   color: #444444;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 14px;
+    background: #ffffff;
+    width: 135px;
+    padding: 0 3px;
+  }
 }
 
 .example__spending-text {
@@ -71,6 +126,12 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: -6px 0 42px 46px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 21px 33px;
+  }
 }
 
 .example__img-fat {
@@ -87,4 +148,10 @@
   margin-top: 29px;
   margin-bottom: 35px;
   text-transform: uppercase;
+}
+
+.example__wrap-slider {
+  height: 689px;
+  // временный отступ пока не разберусь с картинками
+  background: #eaeaea;
 }

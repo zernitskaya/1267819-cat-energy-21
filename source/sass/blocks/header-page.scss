@@ -5,6 +5,10 @@
   @include tablet {
     margin-top: 25px;
   }
+
+  @include middle-desk {
+    background: transparent;
+  }
 }
 
 .header-page__wrap {
@@ -12,6 +16,11 @@
   align-items: center;
   padding: 0 20px;
   justify-content: space-between;
+
+  @include middle-desk {
+    padding: 0 110px;
+    margin-top: 56px;
+  }
 }
 
 .header-page__img {
@@ -21,6 +30,13 @@
   @include tablet {
     width: 174px;
     height: 51px;
+    margin-top: -3px;
+    margin-bottom: 2px;
+  }
+
+  @include middle-desk {
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -48,6 +64,11 @@
     margin-left: 11px;
     margin-top: 2px;
   }
+
+  @include middle-desk {
+    margin-left: 1px;
+    margin-top: 0;
+  }
 }
 
 .header-page__nav {
@@ -59,6 +80,11 @@
     margin-right: 10px;
     margin-bottom: 0;
   }
+
+  @include middle-desk {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
 }
 
 .header-page__list {
@@ -69,7 +95,7 @@
 
   @include tablet {
     display: flex;
-    margin-top: 6px;
+    margin-top: 4px;
   }
 }
 
@@ -79,6 +105,13 @@
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
+
+  @include middle-desk {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
 }
 
 .header-page__item:not(:last-child) {
