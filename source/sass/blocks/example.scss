@@ -1,3 +1,8 @@
+.example {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 .example__wrap {
   padding: 0 20px;
   background: #eaeaea;
@@ -6,6 +11,10 @@
     padding: 0 30px;
     background: #ffffff;
     border-top: 1px solid #e6e6e6;
+  }
+
+  @include middle-desk {
+    display: flex;
   }
 }
 
@@ -151,7 +160,9 @@
 }
 
 .example__wrap-slider {
-  height: 689px;
-  // временный отступ пока не разберусь с картинками
-  background: #eaeaea;
+  @include middle-desk {
+    height: 689px;
+    // временный отступ пока не разберусь с картинками
+    background: #eaeaea;
+  }
 }

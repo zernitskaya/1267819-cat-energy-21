@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.offer {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 .offer__heading {
   padding: 7px 20px;
   margin-bottom: 31px;
@@ -26,34 +31,31 @@
   padding: 0 20px;
   margin-bottom: 22px;
 
-
-  @include middle-mobile {
-    padding: 0 25px;
-  }
-
   @include middle-mobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    grid-column-gap: 80px;
-    grid-row-gap: 61px;
-    padding-top: 25px;
+    grid-column-gap: 60px;
+    grid-row-gap: 36px;
+    padding: 0 25px;
+    margin-top: 54px;
   }
 
   @include tablet {
     padding: 0 30px;
-    margin-bottom: 30px;
+    margin-bottom: 7px;
   }
 
   @include middle-tablet {
     padding: 0 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-column-gap: 80px;
-    grid-row-gap: 30px;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-top: 0;
   }
 
   @include middle-desk {
-    padding: 0 110px;
+    // padding: 0 110px;
   }
 }
 
@@ -76,6 +78,7 @@
   @include tablet {
     width: 80px;
     height: 80px;
+    margin-bottom: 28px;
   }
 }
 
@@ -115,68 +118,55 @@
 .offer__wrap-1 {
   @include middle-mobile {
     background-image: url("/img/1.svg");
-    background-position: right;
+    background-position: right 32px top;
     background-repeat: no-repeat;
     width: 230px;
     height: 280px;
-    // padding-top: 24px;
   }
 
   @include middle-tablet {
-    // padding: 0;
-    // margin: 0;
+    margin-left: -60px;
   }
 }
 
 .offer__wrap-2 {
   @include middle-mobile {
     background-image: url("/img/2.svg");
-    background-position: right;
+    background-position: right 11px top;
     background-repeat: no-repeat;
     width: 246px;
     height: 280px;
-    // padding: 24px 0 0 30px;
   }
 
   @include middle-tablet {
-    // padding: 0;
-    // margin: 0;
-    // padding-left: 20px;
+    margin-left: -10px;
   }
 }
 
 .offer__wrap-3 {
   @include middle-mobile {
     background-image: url("/img/3.svg");
-    background-position: right;
+    background-position: right 11px top;
     background-repeat: no-repeat;
     width: 247px;
     height: 280px;
-    // padding-top: 22px;
-    // margin-top: 38px;
   }
 
   @include middle-tablet {
-    // padding: 0;
-    // margin: 0;
-    // padding-left: 40px;
+    margin-left: 40px;
   }
 }
 
 .offer__wrap-4 {
   @include middle-mobile {
     background-image: url("/img/4.svg");
-    background-position: right;
+    background-position: right 4px top;
     background-repeat: no-repeat;
     width: 249px;
     height: 280px;
-    // padding: 22px 0 0 30px;
-    // margin-top: 38px;
   }
 
   @include middle-tablet {
-    // padding: 0;
-    // margin: 0;
-    // padding-left: 60px;
+    margin-left: 90px;
   }
 }
