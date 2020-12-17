@@ -4,46 +4,58 @@
   box-sizing: border-box;
 }
 
+.offer {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 .offer__heading {
-  padding: 38px 20px;
+  padding: 7px 20px;
+  margin-bottom: 31px;
   font-size: 36px;
   line-height: 40px;
+  font-weight: normal;
 
   @include tablet {
-    padding: 45px 30px;
+    padding: 17px 30px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @include middle-desk {
-    padding: 75px 110px;
+    padding: 42px 110px;
   }
 }
 
 .offer__wraper {
   padding: 0 20px;
-
-  @include middle-mobile {
-    padding: 0 25px;
-  }
+  margin-bottom: 22px;
 
   @include middle-mobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-column-gap: 60px;
+    grid-row-gap: 36px;
+    padding: 0 25px;
+    margin-top: 54px;
   }
 
   @include tablet {
     padding: 0 30px;
+    margin-bottom: 7px;
   }
 
   @include middle-tablet {
     padding: 0 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-top: 0;
   }
 
   @include middle-desk {
-    padding: 0 110px;
+    // padding: 0 110px;
   }
 }
 
@@ -52,9 +64,8 @@
 
   @include middle-mobile {
     flex-direction: column;
-    min-width: 200px;
-    min-height: 280px;
-    margin: 20px;
+    // max-width: 230px;
+    // max-height: 280px;
   }
 }
 
@@ -63,57 +74,99 @@
   height: 60px;
   background: $basic_green;
   margin-bottom: 20px;
+
+  @include tablet {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 28px;
+  }
 }
 
 .offer__icon {
-  width: 25px;
-  height: 28px;
-  margin-top: 16px;
-  margin-left: 16px;
+  width: 28px;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+
+  @include tablet {
+    margin-top: 26px;
+    margin-left: 25px;
+  }
 }
 
 .offer__text {
-  width: 200px;
+  width: 218px;
+  margin-top: 2px;
   padding-left: 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  color: $special_dark-grey;
 
   @include middle-mobile {
     padding-left: 0;
     font-size: 16px;
-    ine-height: 24px;
+    line-height: 24px;
+  }
+
+  @include middle-tablet {
+    margin-top: 11px;
+    margin-left: 0;
   }
 }
 
 .offer__wrap-1 {
   @include middle-mobile {
     background-image: url("/img/1.svg");
-    background-position: right;
+    background-position: right 32px top;
     background-repeat: no-repeat;
+    width: 230px;
+    height: 280px;
+  }
+
+  @include middle-tablet {
+    margin-left: -60px;
   }
 }
 
 .offer__wrap-2 {
   @include middle-mobile {
     background-image: url("/img/2.svg");
-    background-position: right;
+    background-position: right 11px top;
     background-repeat: no-repeat;
+    width: 246px;
+    height: 280px;
+  }
+
+  @include middle-tablet {
+    margin-left: -10px;
   }
 }
 
 .offer__wrap-3 {
   @include middle-mobile {
     background-image: url("/img/3.svg");
-    background-position: right;
+    background-position: right 11px top;
     background-repeat: no-repeat;
+    width: 247px;
+    height: 280px;
+  }
+
+  @include middle-tablet {
+    margin-left: 40px;
   }
 }
 
 .offer__wrap-4 {
   @include middle-mobile {
     background-image: url("/img/4.svg");
-    background-position: right;
+    background-position: right 4px top;
     background-repeat: no-repeat;
+    width: 249px;
+    height: 280px;
+  }
+
+  @include middle-tablet {
+    margin-left: 90px;
   }
 }

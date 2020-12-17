@@ -1,4 +1,6 @@
 .map__wrap {
+  max-width: 1220px;
+  margin: 0 auto;
   background: #ffffff;
 
   @include middle-mobile {
@@ -21,27 +23,56 @@
 .map__contacts {
   display: flex;
   align-items: center;
-  padding: 30px 20px;
+  padding: 27px 20px;
   background: #ffffff;
 
   @include tablet {
     justify-content: space-between;
+    padding: 60px 42px;
   }
 }
 
 .map__wrap-heading {
-  width: 140px;
   padding-right: 20px;
+
+  @include tablet {
+    width: 171px;
+  }
 }
 
 .map__heading {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight: normal;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 1.3;
+  }
 }
 
 .map__wrap-text {
   min-width: 140px;
+
+  @include tablet {
+    width: 159px;
+    line-height: 1.7;
+  }
+}
+
+.map__text {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
 }
 
 .map__wrap-img {
