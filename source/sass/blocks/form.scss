@@ -14,6 +14,10 @@
     line-height: 30px;
     color: #444444;
   }
+
+  @include middle-desk {
+    padding-top: 23px;
+  }
 }
 
 .form__input {
@@ -29,6 +33,11 @@
     line-height: 30px;
     margin-left: 36px;
     height: 52px;
+  }
+
+  @include middle-desk {
+    margin-left: 19px;
+    margin-top: 0;
   }
 }
 

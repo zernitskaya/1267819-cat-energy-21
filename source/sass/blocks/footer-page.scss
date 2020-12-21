@@ -32,6 +32,14 @@
 
 .footer-page__logo-wrap {
   padding: 41px 0 30px 0;
+
+  @include tablet {
+    padding: 44px 0 51px 0;
+  }
+
+  @include middle-desk {
+    padding: 63px 0 65px 0;
+  }
 }
 
 .footer-page__line {
@@ -54,6 +62,10 @@
 
   @include tablet {
     padding-top: 7px;
+  }
+
+  @include middle-desk {
+    padding-top: 0;
   }
 }
 
