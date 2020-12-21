@@ -8,7 +8,7 @@
   }
 
   @include tablet {
-    padding: 0 30px;
+    padding: 0;
   }
 
   @include middle-tablet {
@@ -28,7 +28,8 @@
 
   @include tablet {
     justify-content: space-between;
-    padding: 60px 42px;
+    padding: 60px 71px;
+    background: #f2f2f2;
   }
 }
 
@@ -85,5 +86,6 @@
 
   @include tablet {
     min-width: 768px;
+    height: 401px;
   }
 }

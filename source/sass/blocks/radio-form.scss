@@ -1,5 +1,9 @@
 .radio-form {
   color: $special_dark-grey-2;
+
+  // @include tablet {
+  //   margin-bottom: 7px;
+  // }
 }
 
 .radio-form__input {

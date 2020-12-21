@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 15px 31px;
   }
 
   @include middle-tablet {
@@ -50,10 +50,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 20px;
+  padding-top: 19px;
+
+  @include tablet {
+    padding-top: 7px;
+  }
 }
 
 .footer-page__link-copyright {
   text-decoration: none;
   color: $special_dark-grey;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  @include tablet {
+    padding-right: 23px;
+  }
 }
