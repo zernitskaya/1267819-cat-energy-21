@@ -7,12 +7,6 @@
   }
 }
 
-.header-page__menu {
-  @include middle-desk {
-    background: transparent;
-  }
-}
-
 .header-page__wrap {
   display: flex;
   align-items: center;
@@ -24,6 +18,12 @@
   @include middle-desk {
     padding: 0;
     margin-top: 56px;
+  }
+}
+
+.header-page__menu {
+  @include middle-desk {
+    background: transparent;
   }
 }
 

@@ -1,19 +1,11 @@
 .page-form {
-  max-width: 1220px;
-  margin: 0 auto;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  padding: 0 20px;
 
   @include tablet {
     font-size: 20px;
     line-height: 20px;
-    padding: 0 70px;
-  }
-
-  @include middle-desk {
-    padding: 0;
   }
 }
 
@@ -31,11 +23,23 @@
   }
 }
 
+.page-form__list-program {
+  margin-top: 38px;
+}
+
+.page-form__program-item {
+  padding-bottom: 14px;
+}
+
 .page-form__program-wrap--choice {
   @include middle-desk {
     margin-top: 26px;
     margin-left: 39px;
   }
+}
+
+.page-form__wrap-heading {
+  margin-top: 42px;
 }
 
 .page-form__heading {
@@ -63,6 +67,9 @@
 }
 
 .page-form__wrap-text {
+  margin-top: 37px;
+  max-width: 226px;
+
   @include tablet {
     width: 323px;
   }
@@ -92,7 +99,7 @@
 
 .page-form__list-choice {
   margin-top: 25px;
-  padding: 25px 0;
+  padding: 25px 20px;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
 
@@ -108,13 +115,37 @@
   }
 }
 
+.page-form__contacts-wrap {
+  padding: 0 20px;
+}
+
+.page-form__title {
+  padding: 0 20px;
+
+  @include tablet {
+    padding: 0 70px;
+  }
+
+  @include middle-desk {
+    padding: 0 110px;
+  }
+}
+
 .page-form__legend-wrap {
   border: 0;
   border-top: 2px solid #68b738;
   margin-top: 26px;
+  padding: 0 20px;
 
   @include tablet {
     margin-top: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 70px;
+  }
+
+  @include middle-desk {
+    padding: 0 110px;
   }
 }
 
@@ -141,6 +172,8 @@
 }
 
 .page-form__textarea {
+  outline: none;
+  resize: none;
   min-width: 280px;
   min-height: 150px;
   font-size: 16px;
@@ -164,21 +197,12 @@
   }
 }
 
-.page-form__button-wrap {
-  width: 280px;
-  height: 40px;
-  margin: 21px 0;
+.page-form__textarea:hover {
+  box-shadow: 0 0 0 1px #cdcdcd;
+}
 
-  @include tablet {
-    width: 282px;
-    height: 52px;
-    margin: 0;
-  }
-
-  @include middle-tablet {
-    width: 568px;
-    height: 52px;
-  }
+.page-form__textarea:focus {
+  border: 1px solid #000000;
 }
 
 .page-form__list-additionally {
@@ -203,6 +227,23 @@
 .page-form__item-check {
   @include middle-mobile {
     padding: 18px 0 14px 0;
+  }
+}
+
+.page-form__button-wrap {
+  width: 280px;
+  height: 40px;
+  margin: 21px 0;
+
+  @include tablet {
+    width: 282px;
+    height: 52px;
+    margin: 0;
+  }
+
+  @include middle-tablet {
+    width: 568px;
+    height: 52px;
   }
 }
 
@@ -294,5 +335,7 @@
 }
 
 .page-form_next {
-  display: none;
+  @include middle-mobile {
+    display: none;
+  }
 }
