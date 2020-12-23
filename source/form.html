@@ -51,76 +51,80 @@
   </header>
 
   <form class="page-form">
-    <div class="page-form__wrap-heading">
-      <h1 class="page-form__heading">
-        Подбор программы
-      </h1>
+    <div class="page-form__title">
+      <div class="page-form__wrap-heading">
+        <h1 class="page-form__heading">
+          Подбор программы
+        </h1>
+      </div>
+
+      <div class="page-form__wrap-text">
+        <p class="page-form__text">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+      </div>
+
+      <div class="page-form__wrapper-input">
+        <fieldset class="page-form__program-wrap">
+          <ul class="page-form__list page-form__list-program">
+            <li class="page-form__program-item">
+              <label class="form">
+                ИМЯ:*
+                <input type="text" class="form__input" placeholder="барсик" required>
+              </label>
+            </li>
+
+            <li class="page-form__program-item">
+              <label class="form">
+                Вес (кг):*
+                <input type="text" class="form__input" placeholder="7" required>
+              </label>
+            </li>
+
+            <li class="page-form__program-item">
+              <label class="form">
+                Возраст (лет):
+                <input type="text" class="form__input" placeholder="7">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
     </div>
 
-    <div class="page-form__wrap-text">
-      <p class="page-form__text">
-        Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
-    </div>
+    <fieldset class="page-form__program-wrap page-form__program-wrap--choice">
+      <ul class="page-form__list page-form__list-choice">
+        <li class="page-form__item-choice">
+          <label class="radio-form">
+            <input class="radio-form__input visually-hidden" name="radio" type="radio" checked>
+            <span class="radio-form__style"></span>
+            Похудение
+          </label>
+        </li>
 
-    <div class="page-form__wrapper-input">
-      <fieldset class="page-form__program-wrap">
-        <ul class="page-form__list page-form__list-program">
-          <li class="page-form__program-item">
-            <label class="form">
-              ИМЯ:*
-              <input type="text" class="form__input" placeholder="барсик" required>
-            </label>
-          </li>
+        <li class="page-form__item-choice">
+          <label class="radio-form">
+            <input class="radio-form__input visually-hidden" name="radio" type="radio">
+            <span class="radio-form__style"></span>
+            Набор массы
+          </label>
+        </li>
 
-          <li class="page-form__program-item">
-            <label class="form">
-              Вес (кг):*
-              <input type="text" class="form__input" placeholder="7" required>
-            </label>
-          </li>
+        <li class="page-form__item-choice">
+          <label class="radio-form">
+            <input class="radio-form__input visually-hidden" name="radio" type="radio">
+            <span class="radio-form__style"></span>
+            Не знаю (Нужен ваш совет)
+          </label>
+        </li>
+      </ul>
+    </fieldset>
 
-          <li class="page-form__program-item">
-            <label class="form">
-              Возраст (лет):
-              <input type="text" class="form__input" placeholder="7">
-            </label>
-          </li>
-        </ul>
-      </fieldset>
 
-      <fieldset class="page-form__program-wrap">
-        <ul class="page-form__list page-form__list-choice">
-          <li class="page-form__item-choice">
-            <label class="radio-form">
-              <input class="radio-form__input" type="radio">
-              <span class="radio-form__style"></span>
-              Похудение
-            </label>
-          </li>
-
-          <li class="page-form__item-choice">
-            <label class="radio-form">
-              <input class="radio-form__input" type="radio">
-              <span class="radio-form__style"></span>
-              Набор массы
-            </label>
-          </li>
-
-          <li class="page-form__item-choice">
-            <label class="radio-form">
-              <input class="radio-form__input" type="radio">
-              <span class="radio-form__style"></span>
-              Не знаю (Нужен ваш совет)
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-    </div>
 
     <fieldset class="page-form__contacts-wrap page-form__legend-wrap">
       <legend class="page-form__contacts page-form__legend">
-        Контактные данные <br> (владельца кота)
+        Контактные данные <br class="page-form_next"> (владельца кота)
       </legend>
 
       <nav class="page-form__nav">
@@ -149,7 +153,8 @@
         Комментарий
       </legend>
       <div class="page-form__textarea-wrap">
-        <textarea class="page-form__textarea" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+        <textarea class="page-form__textarea" cols="30" rows="10"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
     </fieldset>
 
@@ -162,32 +167,32 @@
         <ul class="page-form__list page-form__list-additionally">
           <li class="page-form__item-check">
             <label class="checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" checked>
               <span class="checkbox-style"></span>
-              <input class="checkbox__input" type="checkbox">
               Сахарозаменитель
             </label>
           </li>
 
           <li class="page-form__item-check">
             <label class="checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox">
               <span class="checkbox-style"></span>
-              <input class="checkbox__input" type="checkbox">
               Питьевая вода
             </label>
           </li>
 
           <li class="page-form__item-check">
             <label class="checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox">
               <span class="checkbox-style"></span>
-              <input class="checkbox__input" type="checkbox">
               Молоко
             </label>
           </li>
 
           <li class="page-form__item-check">
             <label class="checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox">
               <span class="checkbox-style"></span>
-              <input class="checkbox__input" type="checkbox">
               Витамины
             </label>
           </li>
@@ -196,7 +201,7 @@
 
       <div class="page-form__button-text-wrap">
         <div class="page-form__button-wrap">
-          <button class="basic-button" type="submit"> Отправить заявку </button>
+          <button class="basic-button page-form__button" type="submit"> Отправить заявку </button>
         </div>
 
         <div class="page-form__wrap-text">

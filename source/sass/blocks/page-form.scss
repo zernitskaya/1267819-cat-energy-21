@@ -1,23 +1,45 @@
-.page-form__program-wrap {
-  border: 0;
-  padding-left: 0;
-}
-
 .page-form {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  padding: 0 20px;
 
   @include tablet {
     font-size: 20px;
-    line-height: 30px;
-    padding: 0 70px;
+    line-height: 20px;
+  }
+}
+
+.page-form__program-wrap {
+  border: 0;
+  padding: 0;
+
+  @include middle-tablet {
+    margin-right: 30px;
   }
 
   @include middle-desk {
-    padding: 0 110px;
+    margin-right: 40px;
+    margin-top: 4px;
   }
+}
+
+.page-form__list-program {
+  margin-top: 38px;
+}
+
+.page-form__program-item {
+  padding-bottom: 14px;
+}
+
+.page-form__program-wrap--choice {
+  @include middle-desk {
+    margin-top: 26px;
+    margin-left: 39px;
+  }
+}
+
+.page-form__wrap-heading {
+  margin-top: 42px;
 }
 
 .page-form__heading {
@@ -29,13 +51,27 @@
   @include middle-mobile {
     font-size: 46px;
     line-height: 46px;
-    padding: 26px 0;
+    padding-top: 22px;
   }
 
   @include tablet {
     font-size: 60px;
     line-height: 60px;
-    padding: 56px 0;
+    margin: 0;
+    padding-top: 62px;
+  }
+
+  @include middle-desk {
+    padding-top: 71px;
+  }
+}
+
+.page-form__wrap-text {
+  margin-top: 37px;
+  max-width: 226px;
+
+  @include tablet {
+    width: 323px;
   }
 }
 
@@ -52,7 +88,8 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    padding-bottom: 66px;
+    padding-top: 54px;
+    padding-bottom: 41px;
   }
 }
 
@@ -62,14 +99,15 @@
 
 .page-form__list-choice {
   margin-top: 25px;
-  padding: 25px 0;
+  padding: 25px 20px;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
 
   @include tablet {
     border: 1px solid #d9d9d9;
-    padding-left: 27px;
-    padding-top: 38px;
+    padding-left: 70px;
+    padding-top: 39px;
+    margin-top: 63px;
   }
 
   @include middle-tablet {
@@ -77,10 +115,38 @@
   }
 }
 
+.page-form__contacts-wrap {
+  padding: 0 20px;
+}
+
+.page-form__title {
+  padding: 0 20px;
+
+  @include tablet {
+    padding: 0 70px;
+  }
+
+  @include middle-desk {
+    padding: 0 110px;
+  }
+}
+
 .page-form__legend-wrap {
   border: 0;
   border-top: 2px solid #68b738;
   margin-top: 26px;
+  padding: 0 20px;
+
+  @include tablet {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 70px;
+  }
+
+  @include middle-desk {
+    padding: 0 110px;
+  }
 }
 
 .page-form__legend {
@@ -94,16 +160,20 @@
   @include tablet {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 0;
-    padding-left: 20px;
+    margin-left: -12px;
+    margin-bottom: 40px;
+    text-transform: none;
   }
 }
 
 .page-form__textarea-wrap {
   margin-top: 35px;
+  margin-bottom: 65px;
 }
 
 .page-form__textarea {
+  outline: none;
+  resize: none;
   min-width: 280px;
   min-height: 150px;
   font-size: 16px;
@@ -111,10 +181,11 @@
   text-transform: uppercase;
   color: #444444;
   padding: 5px 0 0 9px;
+  border: 1px solid #e7e7e7;
 
   @include tablet {
     min-width: 631px;
-    height: 164px;
+    height: 173px;
     font-size: 20px;
     line-height: 30px;
     padding: 10px 0 0 19px;
@@ -122,7 +193,40 @@
 
   @include middle-tablet {
     width: 100%;
-    height: 100px;
+    min-height: 175px;
+  }
+}
+
+.page-form__textarea:hover {
+  box-shadow: 0 0 0 1px #cdcdcd;
+}
+
+.page-form__textarea:focus {
+  border: 1px solid #000000;
+}
+
+.page-form__list-additionally {
+  @include middle-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    grid-column-gap: 59px;
+  }
+
+  @include middle-tablet {
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  @include middle-desk {
+    grid-column-gap: 78px;
+    padding: 0;
+  }
+}
+
+.page-form__item-check {
+  @include middle-mobile {
+    padding: 18px 0 14px 0;
   }
 }
 
@@ -134,24 +238,12 @@
   @include tablet {
     width: 282px;
     height: 52px;
+    margin: 0;
   }
 
   @include middle-tablet {
     width: 568px;
     height: 52px;
-  }
-}
-
-.page-form__list-additionally {
-  @include middle-mobile {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  }
-
-  @include middle-tablet {
-    padding: 0 60px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
@@ -162,9 +254,22 @@
     margin-top: 59px;
   }
 
-  @include middle-tablet {
-    margin-top: 81px;
+  @include tablet {
+    margin-top: 40px;
+    margin-bottom: 75px;
+    align-items: center;
   }
+
+  @include middle-desk {
+    margin-top: 46px;
+    margin-bottom: 81px;
+  }
+}
+
+.page-form__button {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 0px;
 }
 
 .page-form__important-text {
@@ -176,7 +281,7 @@
   @include middle-mobile {
     font-size: 16px;
     line-height: 16px;
-    margin-left: 61px;
+    margin-left: 62px;
   }
 
   @include middle-tablet {
@@ -185,9 +290,17 @@
 }
 
 .page-form__wrapper-input {
+  @include tablet {
+    margin-bottom: 75px;
+  }
+
   @include middle-tablet {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+
+  @include middle-desk {
+    margin-bottom: 63px;
   }
 }
 
@@ -196,10 +309,33 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
+
+  @include tablet {
+    margin-bottom: 74px;
+  }
+
+  @include middle-desk {
+    margin-top: 14px;
+    margin-bottom: 67px;
+  }
+}
+
+.page-form__contacts-list {
+  margin-right: 40px;
 }
 
 .page-form__item-contacts:not(:first-child) {
   @include middle-tablet {
     margin-left: 50px;
+  }
+
+  @include middle-desk {
+    margin-left: 38px;
+  }
+}
+
+.page-form_next {
+  @include middle-mobile {
+    display: none;
   }
 }

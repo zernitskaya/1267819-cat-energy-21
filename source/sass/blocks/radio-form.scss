@@ -1,7 +1,44 @@
 .radio-form {
   color: $special_dark-grey-2;
+  display: flex;
+  align-items: center;
 }
 
-.radio-form__input {
-  margin-bottom: 25px;
+.radio-form__style {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  margin: 2px 27px 0 0;
+  border-radius: 50%;
+
+  @include middle-tablet {
+    width: 40px;
+    height: 40px;
+    margin: 5px 14px 5px 16px;
+  }
+}
+
+.radio-form__input:checked + .radio-form__style {
+  background-image: url("/img/icons/radio.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.radio-form__input:hover + .radio-form__style {
+  border: 1px solid #bababa;
+}
+
+.radio-form__input:checked:hover + .radio-form__style {
+  border: 1px solid #bababa;
+  background-image: url("/img/icons/radio.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.radio-form__input:disabled + .radio-form__style {
+  opacity: 0.3;
+}
+
+.radio-form__input :checked:disabled + .radio-form__style {
+  opacity: 0.3;
 }

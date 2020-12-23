@@ -5,10 +5,6 @@
   @include tablet {
     margin-top: 25px;
   }
-
-  @include middle-desk {
-    background: transparent;
-  }
 }
 
 .header-page__wrap {
@@ -20,8 +16,14 @@
   justify-content: space-between;
 
   @include middle-desk {
-    padding: 0 110px;
+    padding: 0;
     margin-top: 56px;
+  }
+}
+
+.header-page__menu {
+  @include middle-desk {
+    background: transparent;
   }
 }
 
@@ -97,6 +99,11 @@
     display: flex;
     margin-top: 4px;
   }
+
+  @include middle-desk {
+    display: flex;
+    margin-top: 4px;
+  }
 }
 
 .header-page__link {
@@ -110,6 +117,12 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    color: #111111;
+  }
+}
+
+.header-page__link--index {
+  @include middle-desk {
     color: #ffffff;
   }
 }

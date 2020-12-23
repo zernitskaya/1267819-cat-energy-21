@@ -10,13 +10,13 @@
 
 <body class="body">
 
-  <header class="header-page">
+  <header class="header-page header-page__menu">
     <div class="header-page__wrap">
       <div class="header-page__logo">
         <a href="index.html" class="header-page__logo-link">
           <picture>
             <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-              <!-- <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)"> -->
+            <!-- <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)"> -->
             <img class="header-page__img" src="img/logo-mobile.svg" width="100" height="100" alt="logo">
           </picture>
         </a>
@@ -36,15 +36,15 @@
         <input type="checkbox" class="header-page__hidden" id="menu">
         <ul class="header-page__list">
           <li class="header-page__item header-page__item--activ">
-            <a href="index.html" class="header-page__link header-page__link--activ">Главная</a>
+            <a href="index.html" class="header-page__link header-page__link--index header-page__link--activ">Главная</a>
           </li>
 
           <li class="header-page__item">
-            <a href="catalog.html" class="header-page__link">Каталог продукции</a>
+            <a href="catalog.html" class="header-page__link header-page__link--index">Каталог продукции</a>
           </li>
 
           <li class="header-page__item">
-            <a href="form.html" class="header-page__link">Подбор программы</a>
+            <a href="form.html" class="header-page__link header-page__link--index">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -52,11 +52,10 @@
   </header>
 
   <section class="promo">
+    <div class="promo__green">
+    </div>
     <div class="promo__wrap">
       <div class="promo__desk">
-        <div class="promo__green">
-        </div>
-
         <div class="promo__about">
           <h1 class="promo__heading">
             Функциональное <br> питание для котов
@@ -85,6 +84,7 @@
   </section>
 
   <section class="schedule">
+    <!-- <div class="container"> -->
     <div class="schedule__wrap">
       <div class="schedule__title">
         <div class="schedule__icon">

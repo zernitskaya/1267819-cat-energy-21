@@ -6,27 +6,53 @@
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
+
+  @include tablet {
+    padding-top: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  @include middle-desk {
+    padding-top: 23px;
+  }
 }
 
 .form__input {
+  outline: none;
   width: 100%;
   height: 45px;
-  margin-top: 14px;
-  margin-left: 20px;
+  margin-left: 15px;
   padding-left: 16px;
   border: 1px solid #cdcdcd;
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 30px;
+    margin-left: 36px;
+    height: 52px;
+  }
+
+  @include middle-desk {
+    margin-left: 19px;
+    margin-top: 0;
   }
 }
 
-.form__input:required:valid {
-  border: 2px solid black;
+.form__input:hover {
+  box-shadow: 0 0 0 1px #cdcdcd;
 }
 
-.form__input:focus:not(:invalid) {
-  border: 2px solid red;
+.form__input:focus {
+  border: 1px solid #000000;
+}
+
+.form__input:disabled + .checkbox-style {
+  opacity: 0.3;
+}
+
+.form__input:checked:disabled + .checkbox-style {
+  opacity: 0.3;
 }
