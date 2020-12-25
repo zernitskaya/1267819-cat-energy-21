@@ -188,3 +188,11 @@
     line-height: 20px;
   }
 }
+
+.promo__button:hover {
+  background-color: $basic_green-2;
+}
+
+.promo__button:active {
+  opacity: 0.5;
+}

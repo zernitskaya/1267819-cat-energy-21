@@ -1,5 +1,29 @@
+// .catalog {
+//   @include mobile {
+//     margin-top: -4px;
+//   }
+// }
+
 .catalog__wrap {
-  padding: 0 20px;
+  // padding: 0 20px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.catalog__heading-wrap {
+  @include mobile {
+    border: 1px solid #ebebeb;
+    margin-top: 17px;
+    padding: 0 0 16px 19px;
+  }
+}
+
+.catalog__heading {
+  @include mobile {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalog__list {
