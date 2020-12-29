@@ -75,6 +75,14 @@
   }
 }
 
+.header-page__logo-link:hover {
+  opacity: 0.8;
+}
+
+.header-page__logo-link:active {
+  opacity: 0.4;
+}
+
 .header-page__nav {
   margin-right: 11px;
   margin-bottom: 2px;
@@ -121,10 +129,28 @@
   }
 }
 
+.header-page__link:hover {
+  opacity: 0.2;
+}
+
+.header-page__link:active {
+  border-bottom: 2px solid #68b738;
+  opacity: 2;
+}
+
 .header-page__link--index {
   @include middle-desk {
     color: #ffffff;
   }
+}
+
+.header-page__link--index:hover {
+  opacity: 0.2;
+}
+
+.header-page__link--index:active {
+  border-bottom: 2px solid #ffffff;
+  opacity: 2;
 }
 
 .header-page__item:not(:last-child) {

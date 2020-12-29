@@ -17,6 +17,7 @@
 .directory__desc {
   display: flex;
   margin-bottom: 22px;
+  margin-left: 36px;
 
   @include middle-mobile {
     flex-direction: column;
@@ -47,8 +48,10 @@
 }
 
 .directory__info-wrap {
-  margin-bottom: 14px;
-  margin-top: 19px;
+  @include mobile {
+    margin-bottom: 14px;
+    margin-top: 20px;
+  }
 
   @include middle-mobile {
     text-align: -webkit-center;
@@ -56,8 +59,10 @@
 }
 
 .directory__heading {
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   align-items: center;
   max-width: 80px;
 }
