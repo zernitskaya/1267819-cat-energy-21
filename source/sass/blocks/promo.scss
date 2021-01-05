@@ -8,7 +8,7 @@
   @include tablet {
     display: flex;
     flex-direction: column;
-    // margin-bottom: -2px;
+    margin-bottom: 0;
   }
 
   @include middle-desk {
@@ -19,6 +19,11 @@
 .promo__desk {
   @include middle-mobile {
     display: flex;
+    margin-left: 116px;
+  }
+
+  @include middle-desk {
+    margin-left: 6px;
   }
 }
 
@@ -64,7 +69,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    padding-left: 0;
+    // padding-left: 0;
   }
 }
 
