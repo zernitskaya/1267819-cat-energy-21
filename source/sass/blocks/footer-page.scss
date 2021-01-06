@@ -63,6 +63,11 @@
   align-items: center;
   padding-top: 19px;
 
+
+  @include mobile {
+    padding-bottom: 32px;
+  }
+
   @include tablet {
     padding-top: 7px;
   }

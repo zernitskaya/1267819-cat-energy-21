@@ -23,7 +23,7 @@
   }
 
   @include middle-desk {
-    padding: 42px 110px;
+    padding: 42px 0;
   }
 }
 
@@ -112,6 +112,10 @@
   @include middle-tablet {
     margin-top: 11px;
     margin-left: 0;
+  }
+
+  @include middle-desk {
+    margin-top: 3px;
   }
 }
 
