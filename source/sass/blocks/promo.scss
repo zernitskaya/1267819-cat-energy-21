@@ -38,6 +38,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("/img/bg-cat2x.jpg");
+  }
+
   @include middle-mobile {
     background-image: none;
   }
@@ -49,6 +54,11 @@
     width: 50%;
     height: 694px;
     margin-top: -116px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("/img/index-background-desktop2x.png");
+    }
   }
 }
 
