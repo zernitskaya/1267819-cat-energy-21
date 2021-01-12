@@ -188,10 +188,10 @@
 .schedule__icon-arrow {
   width: 24px;
   height: 12px;
-  padding-left: 56px;
+  margin-left: 30px;
 
   @include middle-tablet {
-    padding-left: 77px;
+    margin-left: 38px;
   }
 }
 

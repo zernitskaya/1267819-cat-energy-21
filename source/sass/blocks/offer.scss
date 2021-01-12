@@ -64,8 +64,6 @@
 
   @include middle-mobile {
     flex-direction: column;
-    // max-width: 230px;
-    // max-height: 280px;
   }
 }
 
@@ -74,6 +72,9 @@
   height: 60px;
   background: $basic_green;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include tablet {
     width: 80px;
@@ -85,13 +86,6 @@
 .offer__icon {
   width: 28px;
   height: 30px;
-  margin-top: 15px;
-  margin-left: 15px;
-
-  @include tablet {
-    margin-top: 26px;
-    margin-left: 25px;
-  }
 }
 
 .offer__text {
