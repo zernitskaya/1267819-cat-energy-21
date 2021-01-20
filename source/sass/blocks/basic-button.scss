@@ -15,3 +15,11 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+.basic-button:hover {
+  background-color: $basic_green-2;
+}
+
+.basic-button:active {
+  opacity: 0.5;
+}

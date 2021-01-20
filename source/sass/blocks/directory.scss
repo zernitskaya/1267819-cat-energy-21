@@ -5,14 +5,23 @@
   @include middle-mobile {
     min-height: 400px;
     margin-top: 25px;
-    background: #f2f2f2;
+    // background: #f2f2f2;
+    background-color: transparent;
+    background-image: linear-gradient(#f2f2f2, #f2f2f2);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: bottom;
   }
 
   @include middle-tablet {
     margin-top: 92px;
-    background: #f2f2f2;
+    // background: #f2f2f2;
   }
 }
+
+// .catalog__item--directory:nth-child(odd) .directory{
+//   // margin-top: 107px;
+// }
 
 .directory__desc {
   display: flex;
