@@ -1,9 +1,11 @@
 .header-page {
-  margin-top: 13px;
+
   background: #ffffff;
+  position: relative;
 
   @include tablet {
     margin-top: 25px;
+    // margin-top: 13px;
   }
 }
 
@@ -12,12 +14,13 @@
   align-items: center;
   max-width: 1220px;
   margin: 0 auto;
-  padding: 0 20px;
+  // padding: 0 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @include middle-desk {
     padding: 0;
-    margin-top: 56px;
+    // margin-top: 56px;
   }
 }
 
@@ -63,6 +66,7 @@
 .header-page__logo {
   display: flex;
   align-items: center;
+  padding: 14px 20px;
 
   @include tablet {
     margin-left: 11px;
@@ -87,6 +91,10 @@
   margin-right: 11px;
   margin-bottom: 2px;
 
+  @include mobile {
+    width: 100%;
+    margin: 0;
+  }
 
   @include tablet {
     margin-right: 10px;
@@ -129,6 +137,13 @@
   }
 }
 
+.header-page__link--activ {
+  @include tablet {
+    border-bottom: 2px solid #68b738;
+    // padding-bottom: 5px;
+  }
+}
+
 .header-page__link:hover {
   opacity: 0.2;
 }
@@ -144,6 +159,19 @@
   }
 }
 
+.header-page__item:first-child .header-page__link--index {
+  @include tablet {
+    border-bottom: 2px solid #68b738;
+    // padding-bottom: 5px;
+  }
+
+  @include middle-desk {
+    border-bottom: 2px solid #ffffff;
+    // padding-bottom: 5px;
+  }
+}
+
+
 .header-page__link--index:hover {
   opacity: 0.2;
 }
@@ -154,13 +182,37 @@
 }
 
 .header-page__item:not(:last-child) {
-  margin-right: 35px;
+  @include middle-mobile {
+    margin-right: 35px;
+  }
 }
 
-// .header-page__hidden {
-//   display: none;
-// }
+.header-page__item {
+  @include mobile {
+    padding: 20px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+}
+
+.header-page__hidden {
+  // display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .header-page__hidden:checked ~ .header-page__list {
-  display: block;
+  @include mobile {
+    display: block;
+    text-align: center;
+  }
+
+  display: flex;
 }

@@ -33,9 +33,9 @@
           <span class="menu__border"></span>
 
         </label>
-        <input type="checkbox" class="visually-hidden header-page__hidden" id="menu">
+        <input type="checkbox" class="header-page__hidden" id="menu">
         <ul class="header-page__list">
-          <li class="header-page__item header-page__item--activ">
+          <li class="header-page__item">
             <a href="index.html" class="header-page__link header-page__link--index header-page__link--activ">Главная</a>
           </li>
 
@@ -291,15 +291,22 @@
       <div class="example__wrap-slider">
         <div class="example__wrap-img">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/image_cat_desktop.svg">
-            <source srcset="img/image_cat_tablet.svg" media="(min-width: 768px)">
-            <img class="example__img-fat" src="img/cat-before.svg" width="100" height="100" alt="before-after">
+            <!-- <source media="(min-width: 1200px)" srcset="img/image_cat_desktop.svg"> -->
+            <!-- <source srcset="img/image_cat_tablet.svg" media="(min-width: 768px)"> -->
+            <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+            <img class="example__img-fat" src="img/cat-fat.png 1x" srcset="img/cat-fat@2x 2x" width="100" height="100"
+              alt="before-after">
           </picture>
         </div>
-
-        <button class="example__button"> Было </button>
-
-        <button class="example__button"> Стало </button>
+        <div class="example__button-wrap">
+          <button class="example__button"> Было </button>
+          <div class="example__button-line">
+            <div class="example__button-slider">
+              <div class="example__button-slider-green"></div>
+            </div>
+          </div>
+          <button class="example__button"> Стало </button>
+        </div>
       </div>
     </div>
   </section>
