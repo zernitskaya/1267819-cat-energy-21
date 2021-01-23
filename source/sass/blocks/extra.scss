@@ -12,6 +12,8 @@
     justify-content: space-evenly;
     border: 0;
     border-top: 1px solid #ebebeb;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -24,6 +26,9 @@
 
   @include middle-mobile {
     padding-top: 30px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @include middle-tablet {
@@ -44,6 +49,9 @@
 
   @include middle-mobile {
     padding-top: 30px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @include middle-tablet {
@@ -67,7 +75,8 @@
   @include middle-tablet {
     width: 244px;
     height: 40px;
-    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -75,6 +84,7 @@
   @include middle-mobile {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   @include middle-tablet {

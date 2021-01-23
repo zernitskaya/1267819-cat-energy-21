@@ -8,11 +8,12 @@
   @include tablet {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
+    margin-bottom: -3px;
   }
 
   @include middle-desk {
     display: flex;
+    margin-bottom: 0;
   }
 }
 
@@ -51,9 +52,9 @@
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("/img/index-background-desktop.png");
     right: 0;
-    width: 50%;
     height: 694px;
     margin-top: -116px;
+    width: 50%;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
@@ -79,7 +80,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    // padding-left: 0;
+    padding: 0;
   }
 }
 
@@ -98,7 +99,13 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    padding-left: 0;
+    padding-left: 1px;
+    padding-top: 1px;
+  }
+
+  @include middle-tablet {
+    padding-left: 1px;
+    padding-top: 0;
   }
 }
 
@@ -108,15 +115,14 @@
   }
 
   @include tablet {
-    margin: 0;
     color: #000000;
-    margin-top: 18px;
+    margin: 48px 1px 0;
     z-index: 1;
   }
 
   @include middle-desk {
     position: relative;
-    margin-top: 65px;
+    margin-top: 108px;
     margin-left: 73px;
   }
 }
@@ -175,16 +181,14 @@
 
   @include middle-desk {
     margin-left: 80px;
-    margin-top: 22px;
+    margin-top: 23px;
   }
 }
 
 .promo__button {
-  margin-top: 1px;
+  font-size: 14px;
 
   @include tablet {
-    height: 54px;
     font-size: 20px;
-    line-height: 20px;
   }
 }

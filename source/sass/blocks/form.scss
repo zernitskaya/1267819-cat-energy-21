@@ -8,15 +8,10 @@
   color: $special_dark-grey;
 
   @include tablet {
-    padding-top: 10px;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
     color: #444444;
-  }
-
-  @include middle-desk {
-    padding-top: 23px;
   }
 }
 
@@ -31,7 +26,7 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 36px;
+    margin-left: 17px;
     height: 52px;
   }
 

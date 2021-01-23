@@ -2,10 +2,23 @@
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 25px 0;
+  padding: 19px 0;
+
+  @include middle-tablet {
+    padding: 25px 0;
+  }
+}
+
+.social__item {
+  padding: 0 20px;
+
+  @include middle-tablet {
+    padding: 0 20px;
+  }
 }
 
 .social__icon {
-  width: 22px;
-  height: 12px;
+  width: 28px;
+  height: 22px;
+  fill: transparent;
 }
