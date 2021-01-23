@@ -9,17 +9,21 @@
   display: flex;
   align-items: center;
   padding: 27px 20px;
-  background: #ffffff;
+  background: #f2f2f2;
 
-  @include tablet {
+  @include middle-mobile {
+    padding: 43px 70px;
     justify-content: space-between;
-    padding: 60px 71px;
-    background: #f2f2f2;
   }
 
   @include middle-desk {
     position: absolute;
     z-index: 1;
+    top: 95px;
+    background: #ffffff;
+    width: 47%;
+    height: 201px;
+    justify-content: space-around;
   }
 }
 
@@ -27,7 +31,11 @@
   padding-right: 20px;
 
   @include tablet {
-    width: 171px;
+    width: 30%;
+  }
+
+  @include middle-tablet {
+    padding: 0;
   }
 }
 
@@ -63,6 +71,8 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    margin-bottom: 19px;
+    margin-top: 19px;
   }
 }
 
@@ -75,7 +85,7 @@
   }
 
   @include middle-desk {
-    padding-bottom: 32%;
+    padding-bottom: 28%;
   }
 }
 

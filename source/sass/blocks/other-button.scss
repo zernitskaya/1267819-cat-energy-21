@@ -1,0 +1,22 @@
+.other-button {
+  height: 40px;
+  width: 100%;
+  color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.other-button:hover {
+  background-color: #ebebeb;
+}
+
+.other-button:active {
+  opacity: 0.3;
+}

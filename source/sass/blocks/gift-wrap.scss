@@ -1,0 +1,8 @@
+.gift-wrap {
+  @include middle-tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0;
+  }
+}

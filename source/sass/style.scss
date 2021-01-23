@@ -1,10 +1,9 @@
-// @import "base/1index";
-// @import "blocks";
 @import "normalize";
 @import "fonts";
 @import "variables";
 @import "mixins";
 @import "icons";
+@import "general";
 @import "blocks/body";
 @import "blocks/header-page";
 @import "blocks/promo";
@@ -25,4 +24,6 @@
 @import "blocks/menu.scss";
 @import "blocks/visually-hidden";
 @import "blocks/extra.scss";
-// @import "";
+@import "blocks/gift-wrap.scss";
+@import "blocks/directory-plus.scss";
+@import "blocks/other-button.scss";

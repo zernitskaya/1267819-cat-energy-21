@@ -1,21 +1,37 @@
-.catalog__wrap {
-  max-width: 1220px;
-  margin: 0 auto;
+.catalog {
+  padding-top: 27px;
+
+  @include mobile {
+    border-top: 1px solid #ebebeb;
+  }
+
+  @include middle-tablet {
+    @include content;
+  }
 }
 
 .catalog__heading-wrap {
+  padding: 0 20px;
+  padding-bottom: 39px;
+
   @include mobile {
-    border: 1px solid #ebebeb;
-    margin-top: 17px;
-    padding: 0 0 16px 19px;
+    border-bottom: 1px solid #ebebeb;
   }
 }
 
 .catalog__heading {
+  margin: 0;
+
   @include mobile {
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @include middle-tablet {
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -36,12 +52,17 @@
 
 .catalog__check-list {
   list-style: none;
+
+  @include middle-tablet {
+    width: 75%;
+  }
 }
 
 .catalog__item {
   @include middle-mobile {
     padding: 0 30px;
     width: 50%;
+    margin-bottom: 60px;
   }
 
   @include middle-tablet {
@@ -55,6 +76,10 @@
     padding: 0 30px;
     width: 100%;
   }
+
+  @include middle-tablet {
+    padding: 0;
+  }
 }
 
 .catalog__wrap-gift {
@@ -64,6 +89,21 @@
   padding: 0 20px;
   width: 100%;
   height: 289px;
+  margin-top: 34px;
+
+  @include middle-mobile {
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+    padding: 0 30px;
+  }
+
+  @include middle-tablet {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .catalog__gift {
@@ -78,6 +118,7 @@
 
   @include middle-mobile {
     background-image: url("/img/catalog/gift-photo-tablet.png");
+    width: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/catalog/gift-photo-tablet2x.png");
@@ -108,4 +149,12 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+}
+
+.catalog__item--plus {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
+  }
 }

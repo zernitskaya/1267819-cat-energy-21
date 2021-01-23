@@ -33,3 +33,11 @@
     @content;
   }
 }
+
+@mixin content() {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+}

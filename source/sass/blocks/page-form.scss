@@ -1,45 +1,89 @@
 .page-form {
+  padding-top: 27px;
+  padding-bottom: 32px;
+  border-top: 1px solid #e7e7e7;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
 
   @include tablet {
+    padding-top: 50px;
+    padding-bottom: 72px;
+    border: 0;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @include middle-tablet {
+    padding-top: 72px;
   }
 }
 
 .page-form__program-wrap {
-  border: 0;
-  padding: 0;
+  padding: 0 20px;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 24px;
 
-  @include middle-tablet {
-    margin-right: 30px;
+  &:first-child {
+    @include tablet {
+      margin-bottom: 72px;
+    }
+
+    @include middle-tablet {
+      margin-bottom: 0;
+      width: 46.7%;
+      margin-right: 80px;
+    }
   }
 
-  @include middle-desk {
-    margin-right: 40px;
-    margin-top: 4px;
+  @include tablet {
+    padding: 0;
+    border-bottom: 0;
   }
-}
-
-.page-form__list-program {
-  margin-top: 38px;
 }
 
 .page-form__program-item {
-  padding-bottom: 14px;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .page-form__program-wrap--choice {
-  @include middle-desk {
-    margin-top: 26px;
-    margin-left: 39px;
+  padding-top: 22px;
+  padding-bottom: 19px;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include middle-tablet {
+    flex-grow: 1;
+  }
+}
+
+.page-form__item-choice {
+  &:not(:last-child) {
+    margin-bottom: 13px;
   }
 }
 
 .page-form__wrap-heading {
-  margin-top: 42px;
+  padding: 0 20px;
+  margin-bottom: 37px;
+
+  @include tablet {
+    padding: 0 70px;
+    margin-bottom: 55px;
+  }
+
+  @include middle-tablet {
+    @include content;
+  }
 }
 
 .page-form__heading {
@@ -47,49 +91,51 @@
   font-size: 36px;
   line-height: 36px;
   text-transform: none;
+  margin: 0;
 
   @include middle-mobile {
     font-size: 46px;
     line-height: 46px;
-    padding-top: 22px;
   }
 
   @include tablet {
     font-size: 60px;
     line-height: 60px;
-    margin: 0;
-    padding-top: 62px;
-  }
-
-  @include middle-desk {
-    padding-top: 71px;
   }
 }
 
 .page-form__wrap-text {
-  margin-top: 37px;
-  max-width: 226px;
+  padding: 0 20px;
+  margin-bottom: 39px;
 
   @include tablet {
-    width: 323px;
+    padding: 0 70px;
+    margin-bottom: 66px;
+  }
+
+  @include middle-tablet {
+    @include content;
   }
 }
 
 .page-form__text {
+  width: 81%;
   font-size: 14px;
   line-height: 18px;
 
   @include middle-mobile {
     font-size: 18px;
     line-height: 22px;
-    padding: 20px 0;
   }
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    padding-top: 54px;
-    padding-bottom: 41px;
+    width: 55%;
+  }
+
+  @include middle-tablet {
+    width: 324px;
   }
 }
 
@@ -98,89 +144,96 @@
 }
 
 .page-form__list-choice {
-  margin-top: 25px;
-  padding: 25px 20px;
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #d9d9d9;
-
   @include tablet {
-    border: 1px solid #d9d9d9;
-    padding-left: 70px;
-    padding-top: 39px;
-    margin-top: 63px;
-  }
-
-  @include middle-tablet {
-    margin-top: 0;
+    border: 1px solid #e7e7e7;
+    padding: 25px 28px;
   }
 }
 
 .page-form__contacts-wrap {
   padding: 0 20px;
-}
-
-.page-form__title {
-  padding: 0 20px;
+  margin-bottom: 24px;
 
   @include tablet {
-    padding: 0 70px;
+    margin-bottom: 80px;
   }
+}
 
-  @include middle-desk {
-    padding: 0 110px;
+.page-form__field-wrap {
+  overflow: hidden;
+  padding-top: 24px;
+
+  @include tablet {
+    padding-top: 78px;
   }
 }
 
 .page-form__legend-wrap {
   border: 0;
-  border-top: 2px solid #68b738;
-  margin-top: 26px;
   padding: 0 20px;
 
   @include tablet {
-    margin-top: 0;
     font-size: 20px;
     line-height: 20px;
     padding: 0 70px;
   }
 
-  @include middle-desk {
-    padding: 0 110px;
+  @include middle-tablet {
+    @include content;
   }
 }
 
 .page-form__legend {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 35px;
-  padding-right: 14px;
-  padding-left: 10px;
-  margin-left: -12px;
+  text-transform: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    height: 2px;
+    width: 100vw;
+    background-color: #68b738;
+  }
+
+  &::before {
+    display: none;
+
+    @include tablet {
+      display: block;
+      right: calc(100% + 40px);
+    }
+  }
+
+  &::after {
+    left: calc(100% + 22px);
+
+    @include tablet {
+      left: calc(100% + 40px);
+    }
+  }
 
   @include tablet {
     font-size: 36px;
-    line-height: 36px;
-    margin-left: -12px;
-    margin-bottom: 40px;
-    text-transform: none;
+    margin-bottom: 76px;
   }
 }
 
-.page-form__textarea-wrap {
-  margin-top: 35px;
-  margin-bottom: 65px;
-}
-
 .page-form__textarea {
+  display: block;
   outline: none;
   resize: none;
-  min-width: 280px;
+  width: 100%;
   min-height: 150px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  padding: 5px 0 0 9px;
+  padding: 11px 13px;
   border: 1px solid #e7e7e7;
 
   @include tablet {
@@ -205,6 +258,14 @@
   border: 1px solid #000000;
 }
 
+.page-form__comments-wrap {
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 72px;
+  }
+}
+
 .page-form__list-additionally {
   @include middle-mobile {
     display: grid;
@@ -221,6 +282,12 @@
   @include middle-desk {
     grid-column-gap: 78px;
     padding: 0;
+  }
+}
+
+.page-form__additionally {
+  @include tablet {
+    margin-bottom: 36px;
   }
 }
 
@@ -251,25 +318,12 @@
   @include middle-mobile {
     display: flex;
     align-items: baseline;
-    margin-top: 59px;
   }
 
   @include tablet {
-    margin-top: 40px;
-    margin-bottom: 75px;
     align-items: center;
+    padding-top: 43px;
   }
-
-  @include middle-desk {
-    margin-top: 46px;
-    margin-bottom: 81px;
-  }
-}
-
-.page-form__button {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 0px;
 }
 
 .page-form__important-text {
@@ -277,6 +331,7 @@
   text-transform: none;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
 
   @include middle-mobile {
     font-size: 16px;
@@ -291,16 +346,16 @@
 
 .page-form__wrapper-input {
   @include tablet {
-    margin-bottom: 75px;
+    padding: 0 70px;
   }
 
   @include middle-tablet {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  }
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 55px;
 
-  @include middle-desk {
-    margin-bottom: 63px;
+    @include content;
   }
 }
 
@@ -309,28 +364,23 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
-
-  @include tablet {
-    margin-bottom: 74px;
-  }
-
-  @include middle-desk {
-    margin-top: 14px;
-    margin-bottom: 67px;
-  }
 }
 
 .page-form__contacts-list {
-  margin-right: 40px;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
 }
 
-.page-form__item-contacts:not(:first-child) {
-  @include middle-tablet {
-    margin-left: 50px;
-  }
+.page-form__item-contacts {
+  &:not(:first-child) {
+    @include middle-tablet {
+      margin-left: 50px;
+    }
 
-  @include middle-desk {
-    margin-left: 38px;
+    @include middle-desk {
+      margin-left: 38px;
+    }
   }
 }
 

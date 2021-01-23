@@ -7,13 +7,12 @@
   width: 30px;
   height: 30px;
   box-shadow: 0 0 0 1px #cdcdcd;
-  margin: 5px 14px 5px 16px;
+  margin-right: 14px;
   flex-shrink: 0;
 
-  @include middle-tablet {
+  @include tablet {
     width: 40px;
     height: 40px;
-    margin: 5px 14px 5px 16px;
   }
 }
 

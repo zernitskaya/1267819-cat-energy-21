@@ -1,0 +1,60 @@
+.directory-plus {
+  padding: 25px 20px;
+  border-bottom: 1px solid #e7e7e7;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid #e7e7e7;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-top: 50px;
+  }
+}
+
+.directory-plus__icon-more {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+
+  @include tablet {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+  }
+}
+
+.directory-plus__more-heading {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  line-height: 20px;
+
+  @include tablet {
+    font-size: 20px;
+    width: 134px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+}
+
+.directory-plus__more-text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 21px;
+  text-align: center;
+  line-height: 16px;
+
+  @include tablet {
+    margin-bottom: auto;
+    font-size: 18px;
+  }
+}
