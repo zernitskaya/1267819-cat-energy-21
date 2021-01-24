@@ -186,8 +186,9 @@
   }
 }
 
-.schedule__button:hover {
-  opacity: 0.3;
+.schedule__button:hover .schedule__icon-arrow {
+  width: 32px;
+  height: 16px;
 }
 
 .schedule__button:active {
@@ -208,6 +209,11 @@
     margin-left: 27px;
   }
 }
+
+// .schedule__icon-arrow:hover {
+//   width: 28px;
+//   height: 16px;
+// }
 
 .schedule__line {
   @include tablet {
