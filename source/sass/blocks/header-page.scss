@@ -92,13 +92,14 @@
 .header-page__nav {
   margin-right: 11px;
   margin-bottom: 2px;
+  width: 100%;
 
   @include mobile {
-    width: 100%;
     margin: 0;
   }
 
   @include tablet {
+    width: auto;
     margin-right: 33px;
     margin-bottom: 0;
   }
@@ -190,9 +191,12 @@
 }
 
 .header-page__item {
-  @include mobile {
-    padding: 20px 0;
-    border-top: 1px solid #e5e5e5;
+  padding: 20px 0;
+  border-top: 1px solid #e5e5e5;
+
+  @include tablet {
+    padding: 0;
+    border: 0;
   }
 }
 
@@ -210,10 +214,10 @@
 }
 
 .header-page__hidden:checked ~ .header-page__list {
-  @include mobile {
-    display: block;
-    text-align: center;
-  }
+  display: block;
+  text-align: center;
 
-  display: flex;
+  @include tablet {
+    display: flex;
+  }
 }

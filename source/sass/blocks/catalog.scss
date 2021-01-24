@@ -62,7 +62,6 @@
   @include middle-mobile {
     padding: 0 30px;
     width: 50%;
-    margin-bottom: 60px;
   }
 
   @include middle-tablet {
@@ -111,6 +110,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #68b738;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/catalog/gift-photo-mobile2x.png");
@@ -139,10 +139,25 @@
   flex-direction: column;
   align-items: center;
   margin-top: 64px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @include middle-tablet {
+    flex-direction: column;
+  }
+}
+
+.catalog__text-wrap {
+  padding-top: 50px;
 }
 
 .catalog__text {
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

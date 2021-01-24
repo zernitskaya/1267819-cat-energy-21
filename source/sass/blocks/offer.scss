@@ -105,7 +105,7 @@
 .offer__text {
   margin-top: 2px;
   padding-left: 20px;
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
@@ -128,7 +128,7 @@
   }
 }
 
-.offer__wrap--one {
+.offer__wrap-one {
   @include middle-mobile {
     background-image: url("/img/1.svg");
     background-position: right 125px top;
@@ -141,7 +141,7 @@
   }
 }
 
-.offer__wrap--two {
+.offer__wrap-two {
   @include middle-mobile {
     background-image: url("/img/2.svg");
     background-position: right 89px top;
@@ -154,7 +154,7 @@
   }
 }
 
-.offer__wrap--three {
+.offer__wrap-three {
   @include middle-mobile {
     background-image: url("/img/3.svg");
     background-position: right 89px top;
@@ -167,7 +167,7 @@
   }
 }
 
-.offer__wrap--four {
+.offer__wrap-four {
   @include middle-mobile {
     background-image: url("/img/4.svg");
     background-position: right 79px top;

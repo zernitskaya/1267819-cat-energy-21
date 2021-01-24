@@ -68,7 +68,7 @@
 }
 
 .example__text {
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -146,7 +146,7 @@
 }
 
 .example__module-text {
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   position: relative;
   z-index: 1;
   width: 77px;
@@ -232,17 +232,28 @@
 
 .example__button {
   border: 0;
+  cursor: pointer;
   margin-top: 29px;
   margin-bottom: 35px;
   text-transform: uppercase;
   background: transparent;
+  outline: none;
 
-  @include middle-tablet {
+  @include tablet {
+    border-bottom: 1px dashed #cdcdcd;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
     margin-top: 25px;
   }
+}
+
+.example__button:hover {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.example__button:active {
+  opacity: 0.3;
 }
 
 .example__button-line {

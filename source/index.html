@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/fonts/Oswald-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/Oswald-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
 <body class="body">
@@ -33,7 +35,7 @@
           <span class="menu__border"></span>
 
         </label>
-        <input type="checkbox" class="header-page__hidden" id="menu">
+        <input type="checkbox" class="header-page__hidden" id="menu" checked>
         <ul class="header-page__list">
           <li class="header-page__item">
             <a href="index.html" class="header-page__link header-page__link--index header-page__link--activ">Главная</a>
@@ -94,79 +96,86 @@
   </section>
 
   <section class="schedule">
-    <div class="schedule__wrap">
-      <div class="schedule__title">
-        <div class="schedule__icon">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/icons/icon-cat-desk.svg">
-            <source media="(min-width: 768px)" srcset="img/icons/icon-cat-tablet.svg">
-            <img class="schedule__icon-icon" src="img/icons/icon-cat-mobile.svg" width="100" height="100" alt="logo">
-          </picture>
-        </div>
+    <div class="schedule__all">
+      <div class="schedule__all-wrap schedule__all-wrap--one">
+        <div class="schedule__wrap">
+          <div class="schedule__title">
+            <div class="schedule__icon">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/icons/icon-cat-desk.svg">
+                <source media="(min-width: 768px)" srcset="img/icons/icon-cat-tablet.svg">
+                <img class="schedule__icon-icon" src="img/icons/icon-cat-mobile.svg" width="100" height="100"
+                  alt="logo">
+              </picture>
+            </div>
 
-        <div class="schedule__wrap-heading">
-          <h2 class="schedule__heading">
-            Похудение
-          </h2>
-        </div>
-      </div>
+            <div class="schedule__wrap-heading">
+              <h2 class="schedule__heading">
+                Похудение
+              </h2>
+            </div>
+          </div>
 
-      <div class="schedule__wrap-text">
-        <p class="schedule__text">
-          Ваш кот весит больше собаки и почти утратил способность лазить
-          по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-        </p>
+          <div class="schedule__wrap-text">
+            <p class="schedule__text">
+              Ваш кот весит больше собаки и почти утратил способность лазить
+              по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
 
-        <div class="schedule__line">
-          <hr>
-        </div>
+            <div class="schedule__line">
+              <hr>
+            </div>
 
-        <div class="schedule__wrap-button">
-          <button class="schedule__button" type="button">
-            Каталог slim
-            <svg class="schedule__icon-arrow">
-              <use xlink:href="img/sprite/sprite.svg#arrow"></use>
-            </svg>
-          </button>
-        </div>
+            <div class="schedule__wrap-button">
+              <a class="schedule__button" href="#">
+                Каталог slim
+                <svg class="schedule__icon-arrow" width="100" height="100">
+                  <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
 
-      </div>
-    </div>
-
-    <div class="schedule__wrap">
-      <div class="schedule__title">
-        <div class="schedule__icon">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/icons/panther-desk.svg">
-            <source media="(min-width: 768px)" srcset="img/icons/panther-tablet.svg">
-            <img class="schedule__icon-icon" src="img/icons/panther-mobile.svg" width="100" height="100" alt="logo">
-          </picture>
-        </div>
-
-        <div class="schedule__wrap-heading">
-          <h2 class="schedule__heading">
-            Набор массы
-          </h2>
+          </div>
         </div>
       </div>
 
-      <div class="schedule__wrap-text">
-        <p class="schedule__text">
-          Заработать авторитет среди дворовых котов и даже собак? Серия
-          Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-        </p>
+      <div class="schedule__all-wrap schedule__all-wrap--twu">
+        <div class="schedule__wrap">
+          <div class="schedule__title">
+            <div class="schedule__icon">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/icons/panther-desk.svg">
+                <source media="(min-width: 768px)" srcset="img/icons/panther-tablet.svg">
+                <img class="schedule__icon-icon" src="img/icons/panther-mobile.svg" width="100" height="100" alt="logo">
+              </picture>
+            </div>
 
-        <div class="schedule__line">
-          <hr>
-        </div>
+            <div class="schedule__wrap-heading">
+              <h2 class="schedule__heading">
+                Набор массы
+              </h2>
+            </div>
+          </div>
 
-        <div class="schedule__wrap-button">
-          <button class="schedule__button" type="button">
-            каталог pro
-            <svg class="schedule__icon-arrow">
-              <use xlink:href="img/sprite/sprite.svg#arrow"></use>
-            </svg>
-          </button>
+          <div class="schedule__wrap-text">
+            <p class="schedule__text">
+              Заработать авторитет среди дворовых котов и даже собак? Серия
+              Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+
+            <div class="schedule__line">
+              <hr>
+            </div>
+
+            <div class="schedule__wrap-button">
+              <a class="schedule__button" href="#">
+                каталог pro
+                <svg class="schedule__icon-arrow" width="100" height="100">
+                  <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -177,11 +186,11 @@
       Как это работает
     </h2>
     <div class="offer__wraper">
-      <div class="offer__wrap--one">
+      <div class="offer__wrap-one">
         <div class="offer__wrap">
           <div class="offer__wrap-icon">
-            <svg class="offer__icon">
-              <use xlink:href="/img/sprite/sprite.svg#leaf"></use>
+            <svg class="offer__icon" width="100" height="100">
+              <use xlink:href=" /img/sprite/sprite.svg#leaf"></use>
             </svg>
           </div>
 
@@ -193,7 +202,7 @@
         </div>
       </div>
 
-      <div class="offer__wrap--two">
+      <div class="offer__wrap-two">
         <div class="offer__wrap">
           <div class="offer__wrap-icon">
             <div class="offer__icon icon-i-glass"></div>
@@ -207,10 +216,10 @@
         </div>
       </div>
 
-      <div class="offer__wrap--three">
+      <div class="offer__wrap-three">
         <div class="offer__wrap">
           <div class="offer__wrap-icon">
-            <svg class="offer__icon">
+            <svg class="offer__icon" width="100" height="100">
               <use xlink:href="/img/sprite/sprite.svg#eat"></use>
             </svg>
           </div>
@@ -223,13 +232,11 @@
         </div>
       </div>
 
-      <div class="offer__wrap--four">
+      <div class="offer__wrap-four">
         <div class="offer__wrap">
           <div class="offer__wrap-icon">
             <div class="offer__icon icon-i-clok"></div>
           </div>
-
-          <img src="/source/img/icons/glass.svg" alt="">
 
           <div class="offer__wrap-text">
             <p class="offer__text">
@@ -291,18 +298,18 @@
         <div class="example__wrap-img">
           <picture>
             <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
-            <img class="example__img-fat" src="img/cat-fat.png 1x" srcset="img/cat-fat@2x 2x" width="100" height="100"
+            <img class="example__img-fat" src="img/cat-fat.png" srcset="img/cat-fat@2x 2x" width="100" height="100"
               alt="before-after">
           </picture>
         </div>
         <div class="example__button-wrap">
-          <button class="example__button"> Было </button>
+          <button class="example__button" type="button"> Было </button>
           <div class="example__button-line">
-            <div class="example__button-slider">
+            <div class="example__button-slider" aria-label="перетяните слайдер">
               <div class="example__button-slider-green"></div>
             </div>
           </div>
-          <button class="example__button"> Стало </button>
+          <button class="example__button" type="button"> Стало </button>
         </div>
       </div>
     </div>
@@ -323,7 +330,6 @@
           <p class="map__text">
             Санкт-Петербург
           </p>
-          </p>
         </div>
       </div>
     </div>
@@ -339,9 +345,11 @@
   <footer class="footer-page">
     <div class="footer-page__wrap">
       <div class="footer-page__logo-wrap">
-        <svg class="footer-page__logo">
-          <use xlink:href="img/sprite/sprite.svg#logo-footer"></use>
-        </svg>
+        <a href="#" class="footer-page__link-logo-footer" title="logo-footer">
+          <svg class="footer-page__logo" width="100" height="100">
+            <use xlink:href="img/sprite/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
       </div>
 
       <div class="footer-page__line">
@@ -360,7 +368,7 @@
 
           <li class="social__item">
             <a href="#" class="social__link social__link--instagram" title="instagram">
-              <svg class="social__icon">
+              <svg class="social__icon" width="100" height="100">
                 <use xlink:href="img/sprite/sprite.svg#instagram"></use>
               </svg>
             </a>
@@ -368,7 +376,7 @@
 
           <li class="social__item">
             <a href="#" class="social__link social__link--facebook" title="facebook">
-              <svg class="social__icon">
+              <svg class="social__icon" width="100" height="100">
                 <use xlink:href="img/sprite/sprite.svg#facebook"></use>
               </svg>
             </a>
@@ -384,9 +392,11 @@
         <a class="footer-page__link-copyright" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy </a>
 
         <div class="footer-page__icon-wrap">
-          <svg class="footer-page__icon">
-            <use xlink:href="img/sprite/sprite.svg#academylogo"></use>
-          </svg>
+          <a href="#" class="footer-page__link-academylogo" title="logo-footer">
+            <svg class="footer-page__icon" width="100" height="100">
+              <use xlink:href="img/sprite/sprite.svg#academylogo"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

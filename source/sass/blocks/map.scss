@@ -61,7 +61,7 @@
 }
 
 .map__text {
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
@@ -77,15 +77,20 @@
 }
 
 .map__iframe-wrap {
+  background-image: url("/img/map-mobile.jpg");
+  background-size: cover;
   position: relative;
-  padding-bottom: 113%;
+  padding-bottom: 362px;
 
   @include tablet {
-    padding-bottom: 52%;
+    background-image: url("/img/map-tablet.jpg");
+    background-size: cover;
+    padding-bottom: 400px;
   }
 
-  @include middle-desk {
-    padding-bottom: 28%;
+  @include middle-tablet {
+    background-image: url("/img/map-deck.jpg");
+    background-size: cover;
   }
 }
 

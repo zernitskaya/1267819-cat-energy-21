@@ -1,25 +1,39 @@
 .schedule {
   padding: 0 20px;
-  max-width: 1220px;
-  margin: 0 auto;
-
-  @include middle-mobile {
-    padding: 0 25px;
-  }
 
   @include tablet {
     padding: 0 30px;
   }
 
   @include middle-tablet {
-    display: flex;
-    justify-content: center;
-    padding: 0 60px;
+    @include content;
+    padding: 0;
   }
+}
 
-  @include middle-desk {
-    padding: 0 110px;
-    margin-top: -3px;
+.schedule__all {
+  @include middle-tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.schedule__all-wrap {
+  @include middle-tablet {
+    width: 50%;
+    padding: 0 30px;
+  }
+}
+
+.schedule__all-wrap--one {
+  @include middle-tablet {
+    padding-right: 40px;
+  }
+}
+
+.schedule__all-wrap--twu {
+  @include middle-tablet {
+    padding-left: 40px;
   }
 }
 
@@ -37,21 +51,9 @@
   }
 
   @include middle-tablet {
-    width: 100%;
     padding-top: 47px;
     padding-left: 39px;
     padding-bottom: 15px;
-  }
-
-  @include middle-desk {
-    min-width: 570px;
-  }
-}
-
-.schedule__wrap:not(:first-child) {
-  @include middle-tablet {
-    padding-bottom: 0;
-    margin-left: 80px;
   }
 }
 
@@ -98,7 +100,7 @@
 
 .schedule__text {
   margin-bottom: 22px;
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-style: normal;
   font-weight: normal;
   text-transform: none;
@@ -168,18 +170,30 @@
 .schedule__button {
   display: flex;
   align-items: center;
+  color: #000000;
   border: none;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
   width: 200px;
   background: #f2f2f2;
+  outline: none;
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
   }
 }
+
+.schedule__button:hover {
+  opacity: 0.3;
+}
+
+.schedule__button:active {
+  opacity: 0.3;
+}
+
 
 .schedule__icon-arrow {
   width: 24px;

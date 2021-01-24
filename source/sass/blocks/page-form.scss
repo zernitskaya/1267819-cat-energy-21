@@ -292,6 +292,10 @@
 }
 
 .page-form__item-check {
+  @include mobile {
+    margin-bottom: 13px;
+  }
+
   @include middle-mobile {
     padding: 18px 0 14px 0;
   }
@@ -327,7 +331,7 @@
 }
 
 .page-form__important-text {
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   text-transform: none;
   font-size: 14px;
   line-height: 16px;

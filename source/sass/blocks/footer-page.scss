@@ -96,7 +96,7 @@
 .footer-page__link-copyright {
   text-decoration: none;
   color: $special_dark-grey;
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -104,4 +104,28 @@
   @include tablet {
     padding-right: 23px;
   }
+}
+
+.footer-page__link-academylogo {
+  color: #000000;
+}
+
+.footer-page__link-academylogo:hover {
+  color:  #68b738;;
+}
+
+.footer-page__link-academylogo:active {
+  opacity: 0.4;
+}
+
+.footer-page__link-logo-footer {
+  color: #000000;
+}
+
+.footer-page__link-logo-footer:hover {
+  color: #8a8585;
+}
+
+.footer-page__link-logo-footer:active {
+  opacity: 0.3;
 }

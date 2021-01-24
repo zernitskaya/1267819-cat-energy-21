@@ -33,6 +33,10 @@
   border: 1px solid #bababa;
 }
 
+.radio-form__input:focus + .radio-form__style {
+  border: 1px solid #bababa;
+}
+
 .radio-form__input:checked:hover + .radio-form__style {
   border: 1px solid #bababa;
   background-image: url("/img/icons/radio.svg");
@@ -44,6 +48,6 @@
   opacity: 0.3;
 }
 
-.radio-form__input :checked:disabled + .radio-form__style {
+.radio-form__input:checked:disabled + .radio-form__style {
   opacity: 0.3;
 }
